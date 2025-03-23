@@ -720,7 +720,7 @@
                     </div>
                     <div class="wifi-item">
                         <span class="label">Password:</span>
-                        <span class="value">farmstay2023</span>
+                        <span class="value">to be inserted</span>
                     </div>
                 </div>
             </div>
@@ -1670,6 +1670,24 @@
                                 <h4>IDEAL FOR</h4>
                                 <p>Celebrations, weddings, pre-wedding functions, family gatherings, friends reunions, corporate offsites.</p>
                             </div>
+                            
+                            <div class="description-section pricing-section">
+                                <h4>PRICING</h4>
+                                <div class="pricing-details">
+                                    <div class="pricing-row">
+                                        <div class="pricing-label">Weekdays (Mon-Thu):</div>
+                                        <div class="pricing-value">Minimum booking of 5 bedrooms for up to 10 guests at ₹32,500 + GST per day.</div>
+                                    </div>
+                                    <div class="pricing-row">
+                                        <div class="pricing-label">Weekends (Fri-Sun):</div>
+                                        <div class="pricing-value">Minimum booking of 6 bedrooms for up to 12 guests at ₹41,000 + GST per day.</div>
+                                    </div>
+                                    <div class="pricing-row">
+                                        <div class="pricing-label">Capacity:</div>
+                                        <div class="pricing-value">14 persons can sleep comfortably.</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1733,6 +1751,24 @@
                             <div class="description-section">
                                 <h4>IDEAL FOR</h4>
                                 <p>Couples, small families, romantic getaways, special occasions, and weekend escapes from Mumbai.</p>
+                            </div>
+                            
+                            <div class="description-section pricing-section">
+                                <h4>PRICING</h4>
+                                <div class="pricing-details">
+                                    <div class="pricing-row">
+                                        <div class="pricing-label">Weekdays (Mon-Thu):</div>
+                                        <div class="pricing-value">₹8,000 + GST per day for up to 2 guests.</div>
+                                    </div>
+                                    <div class="pricing-row">
+                                        <div class="pricing-label">Weekends (Fri-Sun):</div>
+                                        <div class="pricing-value">₹9,900 + GST per day for up to 2 guests.</div>
+                                    </div>
+                                    <div class="pricing-row">
+                                        <div class="pricing-label">Capacity:</div>
+                                        <div class="pricing-value">4 persons can sleep comfortably.</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1820,9 +1856,37 @@
                                 <h4>IDEAL FOR</h4>
                                 <p>Small families, couples, and multi-generational family getaways.</p>
                             </div>
+                            
+                            <div class="description-section pricing-section">
+                                <h4>PRICING</h4>
+                                <div class="pricing-details">
+                                    <div class="pricing-row">
+                                        <div class="pricing-label">Weekdays (Mon-Thu):</div>
+                                        <div class="pricing-value">₹18,000 + GST per day for up to 4 guests.</div>
+                                    </div>
+                                    <div class="pricing-row">
+                                        <div class="pricing-label">Weekends (Fri-Sun):</div>
+                                        <div class="pricing-value">₹20,000 + GST per day for up to 4 guests.</div>
+                                    </div>
+                                    <div class="pricing-row">
+                                        <div class="pricing-label">Capacity:</div>
+                                        <div class="pricing-value">6 persons can sleep comfortably.</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="pricing-notes">
+                <h3>Additional Information</h3>
+                <ul>
+                    <li>Meals are not included in the above rates.</li>
+                    <li>Additional guests can be accommodated with an extra charge of ₹2,000 per person per day, and 50% for kids.</li>
+                    <li>The above rates are not applicable for Diwali, Christmas, New Year, and special holidays.</li>
+                    <li>Pets are chargeable at ₹1,000 per day.</li>
+                </ul>
             </div>
 
             <style>
@@ -2093,6 +2157,71 @@
                     object-fit: cover;
                 }
                 
+                /* Pricing Styles */
+                .pricing-section {
+                    background-color: #f0f6f7;
+                    border-left: 4px solid #2a5d68;
+                    padding: 20px;
+                    border-radius: 8px;
+                }
+                
+                .pricing-details {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                }
+                
+                .pricing-row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    gap: 10px;
+                }
+                
+                .pricing-label {
+                    font-weight: 600;
+                    color: #2a5d68;
+                    min-width: 160px;
+                }
+                
+                .pricing-value {
+                    flex: 1;
+                    color: #444;
+                }
+                
+                .pricing-notes {
+                    max-width: 800px;
+                    margin: 0 auto 30px;
+                    background-color: #fff8e6;
+                    padding: 20px 25px;
+                    border-radius: 12px;
+                    border-left: 4px solid #f0c14b;
+                    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+                }
+                
+                .pricing-notes h3 {
+                    color: #92723d;
+                    font-size: 1.3rem;
+                    margin-bottom: 15px;
+                    padding-bottom: 8px;
+                    border-bottom: 1px solid #f0e0b6;
+                }
+                
+                .pricing-notes ul {
+                    margin: 0;
+                    padding-left: 20px;
+                }
+                
+                .pricing-notes li {
+                    margin-bottom: 8px;
+                    color: #5a5346;
+                    position: relative;
+                }
+                
+                .pricing-notes li:last-child {
+                    margin-bottom: 0;
+                }
+                
                 /* Responsive adjustments */
                 @media (max-width: 768px) {
                     .villa-tabs {
@@ -2138,6 +2267,23 @@
                     
                     .description-section p {
                         font-size: 1rem;
+                    }
+                    
+                    .pricing-row {
+                        flex-direction: column;
+                        gap: 5px;
+                    }
+                    
+                    .pricing-label {
+                        min-width: auto;
+                    }
+                    
+                    .pricing-section, .pricing-notes {
+                        padding: 15px;
+                    }
+                    
+                    .pricing-notes h3 {
+                        font-size: 1.2rem;
                     }
                 }
                 
