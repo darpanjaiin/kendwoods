@@ -86,19 +86,45 @@ document.addEventListener('DOMContentLoaded', function() {
     const shareBtn = document.getElementById('share-btn');
     if (shareBtn) {
         shareBtn.addEventListener('click', async () => {
-            if (navigator.share) {
+            const shareData = {
+                title: "Kenwoods Farmstay - Digital Guidebook",
+                text: 'Check out this amazing property in Vikramgad, Palghar!',
+                url: window.location.href
+            };
+
+            // Try Web Share API first
+            if (navigator.share && navigator.canShare && navigator.canShare(shareData)) {
                 try {
-                    await navigator.share({
-                        title: "kenwoods Farmstay - Digital Guidebook",
-                        text: 'Check out this amazing property!',
-                        url: window.location.href
-                    });
+                    await navigator.share(shareData);
+                    console.log('Shared successfully');
                 } catch (err) {
                     console.log('Error sharing:', err);
-                    alert('Unable to share at this time');
+                    fallbackShare();
                 }
             } else {
-                alert('Share via: [Copy URL functionality to be implemented]');
+                fallbackShare();
+            }
+
+            // Fallback sharing method - copy to clipboard
+            function fallbackShare() {
+                const tempInput = document.createElement('input');
+                document.body.appendChild(tempInput);
+                tempInput.value = window.location.href;
+                tempInput.select();
+                
+                try {
+                    const successful = document.execCommand('copy');
+                    if (successful) {
+                        alert('URL copied to clipboard! You can now share it manually.');
+                    } else {
+                        alert('Unable to copy URL. Please copy the address manually from your browser.');
+                    }
+                } catch (err) {
+                    console.error('Failed to copy URL', err);
+                    alert('Unable to share. Please copy the URL manually from your browser.');
+                }
+                
+                document.body.removeChild(tempInput);
             }
         });
     }

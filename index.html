@@ -32,19 +32,19 @@
             </a>
             <div class="slides">
                 <div class="slide active">
-                    <img src="assets/hero1.webp" alt="Thea Homes" loading="eager">
+                    <img src="assets/hero1.webp" alt="kenwoods Farmstay" loading="eager">
                 </div>
                 <div class="slide">
-                    <img src="assets/hero2.webp" alt="Thea Homes" loading="lazy">
+                    <img src="assets/hero2.webp" alt="kenwoods Farmstay" loading="lazy">
                 </div>
                 <div class="slide">
-                    <img src="assets/hero3.webp" alt="Thea Homes" loading="lazy">
+                    <img src="assets/hero3.webp" alt="kenwoods Farmstay" loading="lazy">
                 </div>
                 <div class="slide">
-                    <img src="assets/hero4.webp" alt="Thea Homes" loading="lazy">
+                    <img src="assets/hero4.webp" alt="kenwoods Farmstay" loading="lazy">
                 </div>
                 <div class="slide">
-                    <img src="assets/hero5.webp" alt="Thea Homes" loading="lazy">
+                    <img src="assets/hero5.webp" alt="kenwoods Farmstay" loading="lazy">
                 </div>
 
             </div>
@@ -230,7 +230,7 @@
             <div class="gallery-tabs">
                 <button class="gallery-tab active" data-category="general">General</button>
                 <button class="gallery-tab" data-category="activities">Activities</button>
-                <button class="gallery-tab" data-category="kendwood">Kendwood</button>
+                <button class="gallery-tab" data-category="kenwood">Kenwood</button>
                 <button class="gallery-tab" data-category="elfreda">Elfreda</button>
                 <button class="gallery-tab" data-category="siddes">SidDes</button>
             </div>
@@ -283,23 +283,23 @@
                     </div>
                 </div>
                 
-                <!-- Kendwood Section -->
-                <div class="gallery-section" id="kendwood-section">
+                <!-- kenwood Section -->
+                <div class="gallery-section" id="kenwood-section">
                     <div class="gallery-slider">
                         <div class="slider-container">
                             <div class="slider-wrapper">
-                                <img src="assets/gallery/kendwood1.webp" alt="Kendwood Villa" class="slider-image active">
-                                <img src="assets/gallery/kendwood2.webp" alt="Kendwood Villa" class="slider-image">
-                                <img src="assets/gallery/kendwood3.webp" alt="Kendwood Villa" class="slider-image">
+                                <img src="assets/gallery/kenwood1.webp" alt="kenwood Villa" class="slider-image active">
+                                <img src="assets/gallery/kenwood2.webp" alt="kenwood Villa" class="slider-image">
+                                <img src="assets/gallery/kenwood3.webp" alt="kenwood Villa" class="slider-image">
                             </div>
                             <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
                             <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
                             <div class="slider-counter">1 / 3</div>
                         </div>
                         <div class="slider-thumbnails">
-                            <div class="thumbnail active" data-index="0"><img src="assets/gallery/kendwood1.webp" alt="Thumbnail"></div>
-                            <div class="thumbnail" data-index="1"><img src="assets/gallery/kendwood2.webp" alt="Thumbnail"></div>
-                            <div class="thumbnail" data-index="2"><img src="assets/gallery/kendwood3.webp" alt="Thumbnail"></div>
+                            <div class="thumbnail active" data-index="0"><img src="assets/gallery/kenwood1.webp" alt="Thumbnail"></div>
+                            <div class="thumbnail" data-index="1"><img src="assets/gallery/kenwood2.webp" alt="Thumbnail"></div>
+                            <div class="thumbnail" data-index="2"><img src="assets/gallery/kenwood3.webp" alt="Thumbnail"></div>
                         </div>
                     </div>
                 </div>
@@ -373,11 +373,13 @@
                 
                 /* Gallery Tabs */
                 .gallery-tabs {
-                    display: flex;
-                    justify-content: center;
-                    gap: 15px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 10px;
                     margin-bottom: 30px;
-                    flex-wrap: wrap;
+                    max-width: 600px;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
                 
                 .gallery-tab {
@@ -390,6 +392,7 @@
                     color: #555;
                     cursor: pointer;
                     transition: all 0.3s ease;
+                    text-align: center;
                 }
                 
                 .gallery-tab:hover {
@@ -563,12 +566,14 @@
                 /* Responsive Adjustments */
                 @media (max-width: 768px) {
                     .gallery-tabs {
-                        gap: 10px;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 8px;
                     }
                     
                     .gallery-tab {
-                        padding: 10px 20px;
-                        font-size: 1rem;
+                        width: 100%;
+                        font-size: 0.9rem;
+                        padding: 8px 15px;
                     }
                     
                     .slider-container {
@@ -588,14 +593,12 @@
                 
                 @media (max-width: 480px) {
                     .gallery-tabs {
-                        flex-direction: column;
-                        align-items: center;
+                        grid-template-columns: 1fr 1fr;
                         gap: 8px;
                     }
                     
                     .gallery-tab {
                         width: 100%;
-                        max-width: 250px;
                         font-size: 0.9rem;
                         padding: 8px 15px;
                     }
@@ -1588,53 +1591,53 @@
             
             <!-- Villa Category Tabs -->
             <div class="villa-tabs">
-                <button class="villa-tab active" data-villa="kendwood">Kendwood</button>
+                <button class="villa-tab active" data-villa="kenwood">Kenwoods</button>
                 <button class="villa-tab" data-villa="elfreda">Elfreda</button>
                 <button class="villa-tab" data-villa="siddes">SidDes</button>
                             </div>
             
             <!-- Villa Information Sections -->
             <div class="villa-sections">
-                <!-- Kendwood Villa Section -->
-                <div class="villa-section active" id="kendwood-section">
+                <!-- kenwood Villa Section -->
+                <div class="villa-section active" id="kenwood-section">
                     <div class="villa-gallery">
-                        <div class="villa-slider kendwood-slider">
+                        <div class="villa-slider kenwood-slider">
                             <div class="slider-container">
                                 <div class="slider-wrapper">
-                                    <img src="assets/rooms/kendwood/1.webp" alt="Kendwood Villa" class="slider-image active">
-                                    <img src="assets/rooms/kendwood/2.webp" alt="Kendwood Villa" class="slider-image">
-                                    <img src="assets/rooms/kendwood/3.webp" alt="Kendwood Villa" class="slider-image">
-                                    <img src="assets/rooms/kendwood/4.webp" alt="Kendwood Villa" class="slider-image">
-                                    <img src="assets/rooms/kendwood/5.webp" alt="Kendwood Villa" class="slider-image">
-                                    <img src="assets/rooms/kendwood/6.webp" alt="Kendwood Villa" class="slider-image">
-                                    <img src="assets/rooms/kendwood/7.webp" alt="Kendwood Villa" class="slider-image">
-                                    <img src="assets/rooms/kendwood/8.webp" alt="Kendwood Villa" class="slider-image">
-                                    <img src="assets/rooms/kendwood/9.webp" alt="Kendwood Villa" class="slider-image">
-                                    <img src="assets/rooms/kendwood/10.webp" alt="Kendwood Villa" class="slider-image">
-                                    <img src="assets/rooms/kendwood/11.webp" alt="Kendwood Villa" class="slider-image">
+                                    <img src="assets/rooms/kenwood/1.webp" alt="kenwood Villa" class="slider-image active">
+                                    <img src="assets/rooms/kenwood/2.webp" alt="kenwood Villa" class="slider-image">
+                                    <img src="assets/rooms/kenwood/3.webp" alt="kenwood Villa" class="slider-image">
+                                    <img src="assets/rooms/kenwood/4.webp" alt="kenwood Villa" class="slider-image">
+                                    <img src="assets/rooms/kenwood/5.webp" alt="kenwood Villa" class="slider-image">
+                                    <img src="assets/rooms/kenwood/6.webp" alt="kenwood Villa" class="slider-image">
+                                    <img src="assets/rooms/kenwood/7.webp" alt="kenwood Villa" class="slider-image">
+                                    <img src="assets/rooms/kenwood/8.webp" alt="kenwood Villa" class="slider-image">
+                                    <img src="assets/rooms/kenwood/9.webp" alt="kenwood Villa" class="slider-image">
+                                    <img src="assets/rooms/kenwood/10.webp" alt="kenwood Villa" class="slider-image">
+                                    <img src="assets/rooms/kenwood/11.webp" alt="kenwood Villa" class="slider-image">
                                 </div>
                                 <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
                                 <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
                                 <div class="slider-counter">1 / 11</div>
                             </div>
                             <div class="slider-thumbnails">
-                                <div class="thumbnail active" data-index="0"><img src="assets/rooms/kendwood/1.webp" alt="Thumbnail"></div>
-                                <div class="thumbnail" data-index="1"><img src="assets/rooms/kendwood/2.webp" alt="Thumbnail"></div>
-                                <div class="thumbnail" data-index="2"><img src="assets/rooms/kendwood/3.webp" alt="Thumbnail"></div>
-                                <div class="thumbnail" data-index="3"><img src="assets/rooms/kendwood/4.webp" alt="Thumbnail"></div>
-                                <div class="thumbnail" data-index="4"><img src="assets/rooms/kendwood/5.webp" alt="Thumbnail"></div>
-                                <div class="thumbnail" data-index="5"><img src="assets/rooms/kendwood/6.webp" alt="Thumbnail"></div>
-                                <div class="thumbnail" data-index="6"><img src="assets/rooms/kendwood/7.webp" alt="Thumbnail"></div>
-                                <div class="thumbnail" data-index="7"><img src="assets/rooms/kendwood/8.webp" alt="Thumbnail"></div>
-                                <div class="thumbnail" data-index="8"><img src="assets/rooms/kendwood/9.webp" alt="Thumbnail"></div>
-                                <div class="thumbnail" data-index="9"><img src="assets/rooms/kendwood/10.webp" alt="Thumbnail"></div>
-                                <div class="thumbnail" data-index="10"><img src="assets/rooms/kendwood/11.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail active" data-index="0"><img src="assets/rooms/kenwood/1.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="1"><img src="assets/rooms/kenwood/2.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="2"><img src="assets/rooms/kenwood/3.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="3"><img src="assets/rooms/kenwood/4.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="4"><img src="assets/rooms/kenwood/5.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="5"><img src="assets/rooms/kenwood/6.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="6"><img src="assets/rooms/kenwood/7.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="7"><img src="assets/rooms/kenwood/8.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="8"><img src="assets/rooms/kenwood/9.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="9"><img src="assets/rooms/kenwood/10.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="10"><img src="assets/rooms/kenwood/11.webp" alt="Thumbnail"></div>
                             </div>
                         </div>
                     </div>
                     
                     <div class="villa-info">
-                        <h3>Kendwood Villa</h3>
+                        <h3>Kenwoods</h3>
                         <p class="villa-subtitle">The 5+1 bedroom suite Villa - Farmhouse With Swimming Pool Near Mumbai</p>
                         
                         <div class="villa-features">
@@ -1700,7 +1703,7 @@
                     </div>
                     
                     <div class="villa-info">
-                        <h3>Elfreda Villa</h3>
+                        <h3>Elfreda</h3>
                         <p class="villa-subtitle">The 1 bedroom suite Villa - Best Couple Getaway</p>
                         
                         <div class="villa-features">
@@ -1783,7 +1786,7 @@
                     </div>
                     
                     <div class="villa-info">
-                        <h3>SidDes Villa</h3>
+                        <h3>SidDes</h3>
                         <p class="villa-subtitle">The 2 bedroom suite Villa - Best Villa in Palghar for Family Picnic</p>
                         
                         <div class="villa-features">
