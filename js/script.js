@@ -11,12 +11,42 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 6000);
     }
 
+    // Sticky Back Button for Modals
+    const stickyBackBtn = document.querySelector('.sticky-back-btn');
+    if (stickyBackBtn) {
+        stickyBackBtn.addEventListener('click', function() {
+            const openModals = document.querySelectorAll('.modal[style*="display: block"]');
+            openModals.forEach(modal => {
+                closeModal(modal.id);
+            });
+        });
+
+        // Check for open modals periodically and show/hide back button
+        function checkForOpenModals() {
+            const openModal = document.querySelector('.modal[style*="display: block"]');
+            if (openModal) {
+                stickyBackBtn.classList.add('visible');
+            } else {
+                stickyBackBtn.classList.remove('visible');
+            }
+        }
+
+        // Run initially and then periodically check
+        checkForOpenModals();
+        setInterval(checkForOpenModals, 300);
+    }
+
     // Modal functions
     function openModal(modalId) {
         const modal = document.getElementById(modalId);
         if (modal) {
             modal.style.display = 'block';
             document.body.classList.add('modal-open');
+            
+            // Show sticky back button
+            if (stickyBackBtn) {
+                stickyBackBtn.classList.add('visible');
+            }
             
             // Initialize collapsible menus when rules or amenities modal opens
             if (modalId === 'rules-modal' || modalId === 'amenities-modal') {
@@ -30,6 +60,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (modal) {
             modal.style.display = 'none';
             document.body.classList.remove('modal-open');
+            
+            // Check if any other modals are still open
+            const openModals = document.querySelectorAll('.modal[style*="display: block"]');
+            if (openModals.length === 0 && stickyBackBtn) {
+                stickyBackBtn.classList.remove('visible');
+            }
         }
     }
 

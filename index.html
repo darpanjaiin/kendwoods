@@ -22,8 +22,63 @@
     <meta property="og:title" content="Kenwoods Farmstay" />
     <meta property="og:description" content="Vikramgad, Palghar - Just 2 hrs from Mumbai" />
     <link rel="stylesheet" href="css/modal-updates.css">
+    <style>
+        /* Sticky Back Button */
+        .sticky-back-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #FF6B00;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 15px;
+            z-index: 9999;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            border: none;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Inter', sans-serif;
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        
+        .sticky-back-btn.visible {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+        
+        .sticky-back-btn:hover {
+            background-color: #e05e00;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .sticky-back-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .sticky-back-btn {
+                top: 15px;
+                right: 15px;
+                padding: 8px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Sticky Back Button -->
+    <button class="sticky-back-btn">Back</button>
     <div class="container">
         <div class="hero-slider">
             <a href="https://www.instagram.com/kenwoodsfarmstay/" target="_blank" class="instagram-follow-btn">
@@ -108,7 +163,7 @@
                 </div>
             </div>
             <div class="feature-card" id="host-favorites">
-                <img src="assets/food.webp" alt="Food">
+                <img src="assets/food.jpg" alt="Food">
                 <div class="card-content">
                     <h2>Food</h2>
                     <p>Dine and unwind</p>
@@ -142,7 +197,6 @@
     <!-- Modals -->
     <div id="book-now-modal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
             <h2>Book Your Stay</h2>
             <div class="booking-options">
                 <a href="https://wa.me/919821135880" target="_blank" class="booking-link whatsapp-booking">
@@ -224,7 +278,7 @@
 
     <div id="gallery-modal" class="modal">
         <div class="modal-content modal-large">
-            <span class="close">&times;</span>
+            <h2>Gallery</h2>
             
             <!-- Gallery Category Tabs -->
             <div class="gallery-tabs">
@@ -618,7 +672,6 @@
 
     <div id="nearby-modal" class="modal">
         <div class="modal-content modal-large">
-            <span class="close">&times;</span>
             <h2>Address</h2>
             <div class="modal-sections">
                 <div class="modal-section">
@@ -669,7 +722,6 @@
 
     <div id="emergency-modal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
             <h2>Emergency Contacts</h2>
             <div class="modal-sections">
                 <div class="modal-section emergency">
@@ -707,7 +759,6 @@
 
     <div id="rules-modal" class="modal">
         <div class="modal-content modal-large">
-            <span class="close">&times;</span>
             <h2>WiFi & House Rules</h2>
 
             <!-- WiFi Section -->
@@ -770,7 +821,7 @@
 
     <div id="specials-modal" class="modal">
         <div class="modal-content modal-large">
-            <span class="close">&times;</span>
+            <h2>Things To Do</h2>
             
             <div class="things-to-do-container">
                 <!-- At Kenwoods Section -->
@@ -1057,7 +1108,6 @@
 
     <div id="feedback-modal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
             <h2>Leave a Feedback</h2>
             <form id="feedback-form">
                 <input type="text" placeholder="Your Name" required>
@@ -1070,7 +1120,6 @@
 
     <div id="host-favorites-modal" class="modal">
         <div class="modal-content modal-large">
-            <span class="close">&times;</span>
             <h2>MENU</h2>
             
             <div class="menu-package">
@@ -1215,7 +1264,6 @@
 
     <div id="checkout-modal" class="modal">
         <div class="modal-content modal-large">
-            <span class="close">&times;</span>
             <h2>Checking Out Guide</h2>
             
             <div class="modal-sections">
@@ -1315,7 +1363,6 @@
 
     <div id="reviews-modal" class="modal">
         <div class="modal-content modal-large">
-            <span class="close">&times;</span>
             <h2>Guest Reviews</h2>
             
             <!-- Google Reviews Link -->
@@ -1410,7 +1457,6 @@
 
     <div id="amenities-modal" class="modal">
         <div class="modal-content modal-large">
-            <span class="close">&times;</span>
             <h2>AMENITIES</h2>
             <h3 class="amenities-subtitle">KENWOODS FARMSTAY</h3>
             
@@ -1586,7 +1632,6 @@
     <!-- Add new Rooms Modal -->
     <div id="rooms-modal" class="modal">
         <div class="modal-content modal-large">
-            <span class="close">&times;</span>
             <p class="modal-description">Experience three beautiful villas spread over 3.5 acres</p>
             
             <!-- Villa Category Tabs -->
