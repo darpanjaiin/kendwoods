@@ -124,8 +124,8 @@
             <div class="feature-card" id="rooms-card">
                 <img src="assets/rooms.webp" alt="Our Rooms">
                 <div class="card-content">
-                    <h2>Rooms</h2>
-                    <p>Your mountain retreat</p>
+                    <h2>Villas</h2>
+                    <p>Your nature retreat</p>
                 </div>
             </div>
         </section>
@@ -1594,7 +1594,8 @@
                 <button class="villa-tab active" data-villa="kenwood">Kenwoods</button>
                 <button class="villa-tab" data-villa="elfreda">Elfreda</button>
                 <button class="villa-tab" data-villa="siddes">SidDes</button>
-                            </div>
+                <button class="villa-tab coming-soon" data-villa="mowgli" disabled>Mowgli's Den <span class="coming-soon-label">Coming Soon</span></button>
+            </div>
             
             <!-- Villa Information Sections -->
             <div class="villa-sections">
@@ -1877,6 +1878,18 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- Mowgli's Den Section -->
+                <div class="villa-section" id="mowgli-section">
+                    <div class="coming-soon-container">
+                        <div class="coming-soon-content">
+                            <i class="fas fa-tree"></i>
+                            <h3>Mowgli's Den</h3>
+                            <p>A new adventure awaits! Our fourth villa is under construction.</p>
+                            <div class="coming-soon-badge">Coming Soon</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="pricing-notes">
@@ -1938,6 +1951,46 @@
                 .villa-tab.active {
                     background-color: #2a5d68;
                     color: white;
+                }
+                
+                .villa-tab.coming-soon {
+                    background-color: #f0f0f0;
+                    color: #777;
+                    position: relative;
+                    overflow: visible;
+                    cursor: not-allowed;
+                    opacity: 0.85;
+                    border: 1px dashed #aaa;
+                }
+                
+                .coming-soon-label {
+                    background-color: #ffc107;
+                    color: #000;
+                    font-size: 0.7rem;
+                    padding: 2px 6px;
+                    border-radius: 3px;
+                    margin-left: 5px;
+                    font-weight: bold;
+                    position: relative;
+                    top: -1px;
+                    display: inline-block;
+                    animation: pulse 2s infinite;
+                }
+                
+                /* Coming Soon Section Styles */
+                .coming-soon-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 400px;
+                    background-color: #f8f9fa;
+                    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('assets/illustration/forest.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 12px;
+                    margin: 20px 0;
+                    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                    border: 2px dashed #2a5d68;
                 }
                 
                 /* Villa Sections */
