@@ -80,7 +80,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'specials-btn': 'specials-modal',
         'host-favorites': 'host-favorites-modal',
         'gallery-card': 'gallery-modal',
-        'amenities-card': 'amenities-modal'
+        'amenities-card': 'amenities-modal',
+        'prices-card': 'prices-modal'
     };
 
     // Add click handlers for all buttons
