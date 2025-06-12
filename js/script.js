@@ -359,99 +359,142 @@ document.addEventListener('DOMContentLoaded', function() {
         setInterval(nextSlide, slideInterval);
     }, 1000);
 
-    // Villa tabs in Rooms Modal
+    // Villa tab functionality
     const villaTabs = document.querySelectorAll('.villa-tab');
     const villaSections = document.querySelectorAll('.villa-section');
-    
+    const pricingNotes = document.querySelector('.pricing-notes');
+
     villaTabs.forEach(tab => {
         tab.addEventListener('click', () => {
-            const targetVilla = tab.getAttribute('data-villa');
-            
-            // Update active tab
+            // Remove active class from all tabs and sections
             villaTabs.forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
+            villaSections.forEach(s => s.classList.remove('active'));
             
-            // Show selected villa section
-            villaSections.forEach(section => {
-                section.classList.remove('active');
-                if (section.id === `${targetVilla}-section`) {
-                    section.classList.add('active');
-                }
-            });
+            // Add active class to clicked tab and corresponding section
+            tab.classList.add('active');
+            const villaId = tab.getAttribute('data-villa');
+            document.getElementById(`${villaId}-section`).classList.add('active');
+            
+            // Show pricing notes for all villas
+            if (pricingNotes) {
+                pricingNotes.style.display = 'block';
+            }
         });
     });
+    
+    // Show coming soon message
+    function showComingSoonMessage() {
+        // Create a temporary notification
+        const notification = document.createElement('div');
+        notification.className = 'coming-soon-notification';
+        notification.innerHTML = '<i class="fas fa-hard-hat"></i> Mowgli\'s Den is under construction. Check back soon!';
+        document.body.appendChild(notification);
+        
+        // Add CSS for the notification
+        const style = document.createElement('style');
+        style.textContent = `
+            .coming-soon-notification {
+                position: fixed;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #2a5d68;
+                color: white;
+                padding: 12px 20px;
+                border-radius: 30px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+                z-index: 1000;
+                font-size: 1rem;
+                text-align: center;
+                animation: slideUp 0.3s ease-out, fadeOut 0.3s ease-out 3.7s forwards;
+            }
+            .coming-soon-notification i {
+                margin-right: 8px;
+                color: #ffc107;
+            }
+            @keyframes slideUp {
+                from { transform: translate(-50%, 50px); opacity: 0; }
+                to { transform: translate(-50%, 0); opacity: 1; }
+            }
+            @keyframes fadeOut {
+                from { opacity: 1; }
+                to { opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+        
+        // Remove after 4 seconds
+        setTimeout(() => {
+            notification.remove();
+            style.remove();
+        }, 4000);
+    }
 
     // Room sliders functionality
     function initializeRoomSliders() {
-        const villaSliders = document.querySelectorAll('.villa-slider');
+        const sliders = document.querySelectorAll('.villa-slider');
         
-        villaSliders.forEach(slider => {
-            const sliderWrapper = slider.querySelector('.slider-wrapper');
+        sliders.forEach(slider => {
             const images = slider.querySelectorAll('.slider-image');
+            const thumbnails = slider.querySelectorAll('.thumbnail');
             const prevBtn = slider.querySelector('.slider-nav.prev');
             const nextBtn = slider.querySelector('.slider-nav.next');
-            const thumbnails = slider.querySelectorAll('.thumbnail');
             const counter = slider.querySelector('.slider-counter');
             
             let currentIndex = 0;
-            const totalImages = images.length;
             
-            // Update counter
-            function updateCounter() {
-                counter.textContent = `${currentIndex + 1} / ${totalImages}`;
-            }
-            
-            // Show image by index
-            function showImage(index) {
-                // Hide all images
-                images.forEach(img => img.classList.remove('active'));
-                
-                // Show selected image
-                images[index].classList.add('active');
+            function updateSlider(index) {
+                // Update images
+                images.forEach((img, i) => {
+                    img.classList.toggle('active', i === index);
+                });
                 
                 // Update thumbnails
-                thumbnails.forEach(thumb => thumb.classList.remove('active'));
-                if (thumbnails[index]) {
-                    thumbnails[index].classList.add('active');
-                }
+                thumbnails.forEach((thumb, i) => {
+                    thumb.classList.toggle('active', i === index);
+                });
                 
                 // Update counter
-                updateCounter();
+                if (counter) {
+                    counter.textContent = `${index + 1} / ${images.length}`;
+                }
+                
+                currentIndex = index;
             }
             
-            // Next slide
-            nextBtn.addEventListener('click', () => {
-                currentIndex = (currentIndex + 1) % totalImages;
-                showImage(currentIndex);
-            });
+            // Previous button
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    const newIndex = currentIndex > 0 ? currentIndex - 1 : images.length - 1;
+                    updateSlider(newIndex);
+                });
+            }
             
-            // Previous slide
-            prevBtn.addEventListener('click', () => {
-                currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-                showImage(currentIndex);
-            });
+            // Next button
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    const newIndex = currentIndex < images.length - 1 ? currentIndex + 1 : 0;
+                    updateSlider(newIndex);
+                });
+            }
             
-            // Thumbnail click
+            // Thumbnail clicks
             thumbnails.forEach((thumb, index) => {
-                thumb.addEventListener('click', () => {
-                    currentIndex = index;
-                    showImage(currentIndex);
+                thumb.addEventListener("click", () => {
+                    updateSlider(index);
                 });
             });
-            
-            // Initialize counter
-            updateCounter();
         });
     }
 
-    // Initialize sliders when rooms modal is opened
-    document.getElementById('rooms-card').addEventListener('click', function() {
-        setTimeout(initializeRoomSliders, 100); // Small delay to ensure DOM is ready
-    });
-
-    // Also initialize if modal is already open (for refreshes)
-    if (document.getElementById('rooms-modal').style.display === 'block') {
-        initializeRoomSliders();
+    // Initialize room sliders when rooms modal opens
+    const roomsCard = document.getElementById('rooms-card');
+    if (roomsCard) {
+        roomsCard.addEventListener('click', () => {
+            setTimeout(() => {
+                initializeRoomSliders();
+            }, 100);
+        });
     }
 
     // Gallery modal functionality

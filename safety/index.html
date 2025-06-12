@@ -1,0 +1,2306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenwoods Farmstay</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FGMBDY796D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FGMBDY796D');
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/favicon.webp" type="image/webp">
+    <link rel="apple-touch-icon" href="assets/favicon.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta property="og:image" content="assets/favicon.webp" />
+    <meta property="og:title" content="Kenwoods Farmstay" />
+    <meta property="og:description" content="Vikramgad, Palghar - Just 2 hrs from Mumbai" />
+    <link rel="stylesheet" href="css/modal-updates.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hero-slider">
+            <a href="https://www.instagram.com/kenwoodsfarmstay/" target="_blank" class="instagram-follow-btn">
+                <i class="fab fa-instagram"></i>
+                <span>Follow Kenwoods Farmstay</span>
+            </a>
+            <div class="slides">
+                <div class="slide active">
+                    <img src="assets/hero1.webp" alt="kenwoods Farmstay" loading="eager">
+                </div>
+                <div class="slide">
+                    <img src="assets/hero2.webp" alt="kenwoods Farmstay" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="assets/hero3.webp" alt="kenwoods Farmstay" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="assets/hero4.webp" alt="kenwoods Farmstay" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="assets/hero5.webp" alt="kenwoods Farmstay" loading="lazy">
+                </div>
+
+            </div>
+        </div>
+        <header>
+            <h1>Kenwoods Farmstay</h1>
+            <p class="tagline">
+                Vikramgad, Palghar
+            </p>
+            <p class="sub-tagline">
+                3 beautiful villas spread over 3.5 acres: Kenwoods (6 bedrooms), Elfreda (1 bedroom), SidDes (2 bedrooms). Just 2 hrs from Mumbai, 3.5 hrs from Surat.
+            </p>
+        </header>
+
+        <div class="quick-access-grid">
+            <div class="grid-item" id="nearby-btn">
+                <div class="icon-wrapper">
+                    <i class="fas fa-compass"></i>
+                </div>
+                <h3>Location</h3>
+            </div>
+            <div class="grid-item" id="reviews-btn">
+                <div class="icon-wrapper">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Reviews</h3>
+            </div>
+            <div class="grid-item" id="rules-btn">
+                <div class="icon-wrapper">
+                    <i class="fas fa-scroll"></i>
+                </div>
+                <h3>Wifi &<br>Rules</h3>
+            </div>
+            <div class="grid-item" id="emergency-btn">
+                <div class="icon-wrapper">
+                    <i class="fas fa-phone-volume"></i>
+                </div>
+                <h3>Emergency<br>Contact</h3>
+            </div>
+            
+            <div class="grid-item" id="specials-btn">
+                <div class="icon-wrapper">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <h3>Things<br>To Do</h3>
+            </div>
+            <div class="grid-item" id="book-now-btn">
+                <div class="icon-wrapper">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3>Book<br>Now</h3>
+            </div>
+        </div>
+
+        <section class="featured-sections">
+            <div class="feature-card" id="amenities-card">
+                <img src="assets/amenities.jpg" alt="Amenities">
+                <div class="card-content">
+                    <h2>Amenities</h2>
+                    <p>Find what's inside</p>
+                </div>
+            </div>
+            <div class="feature-card" id="host-favorites">
+                <img src="assets/food.webp" alt="Food">
+                <div class="card-content">
+                    <h2>Food</h2>
+                    <p>Dine and unwind</p>
+                </div>
+            </div>
+            <div class="feature-card" id="gallery-card">
+                <img src="assets/gallery.webp" alt="Property Gallery">
+                <div class="card-content">
+                    <h2>Gallery</h2>
+                    <p>View property images</p>
+                </div>
+            </div>
+            <div class="feature-card" id="rooms-card">
+                <img src="assets/rooms.webp" alt="Our Rooms">
+                <div class="card-content">
+                    <h2>Rooms</h2>
+                    <p>Your mountain retreat</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p class="quote">This house becomes more than bricks and mortar when it holds the laughter and memories of travelers like you.</p>
+            <div class="footer-buttons">
+                <button id="book-now-footer-btn">Book Now</button>
+                <button id="share-btn">Share property</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modals -->
+    <div id="book-now-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Book Your Stay</h2>
+            <div class="booking-options">
+                <a href="https://wa.me/919821135880" target="_blank" class="booking-link whatsapp-booking">
+                    <div class="booking-platform whatsapp">
+                        <div class="platform-icon-wrapper">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="booking-platform-content">
+                            <h3>Contact on WhatsApp</h3>
+                        </div>
+                        <div class="booking-cta">
+                            <span>Chat Now</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <style>
+                .whatsapp-booking {
+                    text-decoration: none;
+                    display: block;
+                    color: #ffffff;
+                    margin: 15px 0;
+                }
+                .booking-platform.whatsapp {
+                    background-color: #25D366;
+                    color: white;
+                    border-radius: 10px;
+                    padding: 15px;
+                    display: flex;
+                    align-items: center;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 4px 8px rgba(37, 211, 102, 0.3);
+                }
+                .booking-platform.whatsapp:hover {
+                    background-color: #128C7E;
+                    transform: translateY(-2px);
+                    box-shadow: 0 5px 12px rgba(37, 211, 102, 0.4);
+                }
+                .platform-icon-wrapper {
+                    font-size: 2rem;
+                    margin-right: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 45px;
+                    height: 45px;
+                    background-color: rgba(255, 255, 255, 0.2);
+                    border-radius: 50%;
+                }
+                .booking-platform-content {
+                    flex-grow: 1;
+                }
+                .booking-platform-content h3 {
+                    margin: 0 0 3px 0;
+                    font-size: 1.1rem;
+                    color: #ffffff;
+                }
+                .booking-platform-content p {
+                    margin: 0;
+                    opacity: 0.9;
+                    font-size: 0.8rem;
+                }
+                .booking-cta {
+                    display: flex;
+                    align-items: center;
+                    background-color: rgba(255, 255, 255, 0.2);
+                    padding: 6px 10px;
+                    border-radius: 16px;
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                }
+                .booking-cta i {
+                    margin-left: 8px;
+                }
+            </style>
+        </div>
+    </div>
+
+    <div id="gallery-modal" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close">&times;</span>
+            
+            <!-- Gallery Category Tabs -->
+            <div class="gallery-tabs">
+                <button class="gallery-tab active" data-category="general">General</button>
+                <button class="gallery-tab" data-category="activities">Activities</button>
+                <button class="gallery-tab" data-category="kenwood">Kenwood</button>
+                <button class="gallery-tab" data-category="elfreda">Elfreda</button>
+                <button class="gallery-tab" data-category="siddes">SidDes</button>
+            </div>
+            
+            <!-- Gallery Sections -->
+            <div class="gallery-sections">
+                <!-- General Section -->
+                <div class="gallery-section active" id="general-section">
+                    <div class="gallery-slider">
+                        <div class="slider-container">
+                            <div class="slider-wrapper">
+                                <img src="assets/gallery/g1.jpeg" alt="Kenwoods Farmstay" class="slider-image active">
+                                <img src="assets/gallery/g2.jpeg" alt="Kenwoods Farmstay" class="slider-image">
+                                <img src="assets/gallery/g3.jpeg" alt="Kenwoods Farmstay" class="slider-image">
+                            </div>
+                            <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
+                            <div class="slider-counter">1 / 3</div>
+                        </div>
+                        <div class="slider-thumbnails">
+                            <div class="thumbnail active" data-index="0"><img src="assets/gallery/g1.jpeg" alt="Thumbnail"></div>
+                            <div class="thumbnail" data-index="1"><img src="assets/gallery/g2.jpeg" alt="Thumbnail"></div>
+                            <div class="thumbnail" data-index="2"><img src="assets/gallery/g3.jpeg" alt="Thumbnail"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Activities Section -->
+                <div class="gallery-section" id="activities-section">
+                    <div class="gallery-slider">
+                        <div class="slider-container">
+                            <div class="slider-wrapper">
+                                <img src="assets/gallery/act1.jpg" alt="Activities at Kenwoods" class="slider-image active">
+                                <img src="assets/gallery/act2.jpg" alt="Activities at Kenwoods" class="slider-image">
+                                <img src="assets/gallery/act3.jpg" alt="Activities at Kenwoods" class="slider-image">
+                                <img src="assets/gallery/act4.jpg" alt="Activities at Kenwoods" class="slider-image">
+                                <img src="assets/gallery/act5.jpg" alt="Activities at Kenwoods" class="slider-image">
+                            </div>
+                            <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
+                            <div class="slider-counter">1 / 5</div>
+                        </div>
+                        <div class="slider-thumbnails">
+                            <div class="thumbnail active" data-index="0"><img src="assets/gallery/act1.jpg" alt="Thumbnail"></div>
+                            <div class="thumbnail" data-index="1"><img src="assets/gallery/act2.jpg" alt="Thumbnail"></div>
+                            <div class="thumbnail" data-index="2"><img src="assets/gallery/act3.jpg" alt="Thumbnail"></div>
+                            <div class="thumbnail" data-index="3"><img src="assets/gallery/act4.jpg" alt="Thumbnail"></div>
+                            <div class="thumbnail" data-index="4"><img src="assets/gallery/act5.jpg" alt="Thumbnail"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- kenwood Section -->
+                <div class="gallery-section" id="kenwood-section">
+                    <div class="gallery-slider">
+                        <div class="slider-container">
+                            <div class="slider-wrapper">
+                                <img src="assets/gallery/kenwood1.webp" alt="kenwood Villa" class="slider-image active">
+                                <img src="assets/gallery/kenwood2.webp" alt="kenwood Villa" class="slider-image">
+                                <img src="assets/gallery/kenwood3.webp" alt="kenwood Villa" class="slider-image">
+                            </div>
+                            <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
+                            <div class="slider-counter">1 / 3</div>
+                        </div>
+                        <div class="slider-thumbnails">
+                            <div class="thumbnail active" data-index="0"><img src="assets/gallery/kenwood1.webp" alt="Thumbnail"></div>
+                            <div class="thumbnail" data-index="1"><img src="assets/gallery/kenwood2.webp" alt="Thumbnail"></div>
+                            <div class="thumbnail" data-index="2"><img src="assets/gallery/kenwood3.webp" alt="Thumbnail"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Elfreda Section -->
+                <div class="gallery-section" id="elfreda-section">
+                    <div class="gallery-slider">
+                        <div class="slider-container">
+                            <div class="slider-wrapper">
+                                <img src="assets/gallery/elfreda1.webp" alt="Elfreda Villa" class="slider-image active">
+                                <img src="assets/gallery/elfreda2.webp" alt="Elfreda Villa" class="slider-image">
+                                <img src="assets/gallery/elfreda3.webp" alt="Elfreda Villa" class="slider-image">
+
+                            </div>
+                            <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
+                            <div class="slider-counter">1 / 2</div>
+                        </div>
+                        <div class="slider-thumbnails">
+                            <div class="thumbnail active" data-index="0"><img src="assets/gallery/elfreda1.webp" alt="Thumbnail"></div>
+                            <div class="thumbnail" data-index="1"><img src="assets/gallery/elfreda2.webp" alt="Thumbnail"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- SidDes Section -->
+                <div class="gallery-section" id="siddes-section">
+                    <div class="gallery-slider">
+                        <div class="slider-container">
+                            <div class="slider-wrapper">
+                                <img src="assets/gallery/siddes1.webp" alt="SidDes Villa" class="slider-image active">
+                                <img src="assets/gallery/siddes2.webp" alt="SidDes Villa" class="slider-image">
+                                <img src="assets/gallery/siddes3.webp" alt="SidDes Villa" class="slider-image">
+                                <img src="assets/gallery/siddes4.webp" alt="SidDes Villa" class="slider-image">
+                            </div>
+                            <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
+                            <div class="slider-counter">1 / 4</div>
+                        </div>
+                        <div class="slider-thumbnails">
+                            <div class="thumbnail active" data-index="0"><img src="assets/gallery/siddes1.webp" alt="Thumbnail"></div>
+                            <div class="thumbnail" data-index="1"><img src="assets/gallery/siddes2.webp" alt="Thumbnail"></div>
+                            <div class="thumbnail" data-index="2"><img src="assets/gallery/siddes3.webp" alt="Thumbnail"></div>
+                            <div class="thumbnail" data-index="3"><img src="assets/gallery/siddes4.webp" alt="Thumbnail"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- View Rooms Button -->
+            <div class="view-rooms-button-container">
+                <button id="view-rooms-from-gallery" class="view-rooms-button">
+                    <i class="fas fa-bed"></i> View Detailed Room Images
+                </button>
+            </div>
+            
+            <style>
+                #gallery-modal .modal-content {
+                    max-width: 1100px;
+                    background-color: #f8f9fa;
+                    padding: 30px;
+                }
+                
+                #gallery-modal h2 {
+                    text-align: center;
+                    color: #2a5d68;
+                    margin-bottom: 25px;
+                    font-weight: 700;
+                    font-size: 2.5rem;
+                }
+                
+                /* Gallery Tabs */
+                .gallery-tabs {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 10px;
+                    margin-bottom: 30px;
+                    max-width: 600px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                
+                .gallery-tab {
+                    padding: 12px 25px;
+                    background-color: #e0e0e0;
+                    border: none;
+                    border-radius: 30px;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    color: #555;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    text-align: center;
+                }
+                
+                .gallery-tab:hover {
+                    background-color: #d0d0d0;
+                }
+                
+                .gallery-tab.active {
+                    background-color: #2a5d68;
+                    color: white;
+                }
+                
+                /* Gallery Sections */
+                .gallery-section {
+                    display: none;
+                }
+                
+                .gallery-section.active {
+                    display: block;
+                }
+                
+                /* Gallery Slider */
+                .gallery-slider {
+                    margin: 0 auto;
+                    max-width: 800px;
+                }
+                
+                .slider-container {
+                    position: relative;
+                    width: 100%;
+                    aspect-ratio: 16/9;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                    margin-bottom: 15px;
+                    background-color: #f0f0f0;
+                }
+                
+                .slider-wrapper {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                .slider-image {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    opacity: 0;
+                    transition: opacity 0.5s ease;
+                    background-color: #f0f0f0;
+                }
+                
+                .slider-image.active {
+                    opacity: 1;
+                }
+                
+                .slider-nav {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 40px;
+                    height: 40px;
+                    background-color: rgba(255, 255, 255, 0.7);
+                    border: none;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.2rem;
+                    color: #2a5d68;
+                    z-index: 10;
+                    transition: all 0.3s ease;
+                }
+                
+                .slider-nav:hover {
+                    background-color: rgba(255, 255, 255, 0.9);
+                }
+                
+                .slider-nav.prev {
+                    left: 10px;
+                }
+                
+                .slider-nav.next {
+                    right: 10px;
+                }
+                
+                .slider-counter {
+                    position: absolute;
+                    bottom: 15px;
+                    right: 15px;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 15px;
+                    font-size: 0.9rem;
+                    z-index: 10;
+                }
+                
+                .slider-thumbnails {
+                    display: flex;
+                    gap: 10px;
+                    overflow-x: auto;
+                    padding-bottom: 10px;
+                    justify-content: center;
+                }
+                
+                .thumbnail {
+                    width: 70px;
+                    height: 70px;
+                    flex-shrink: 0;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    cursor: pointer;
+                    opacity: 0.6;
+                    transition: all 0.3s ease;
+                }
+                
+                .thumbnail:hover {
+                    opacity: 0.8;
+                }
+                
+                .thumbnail.active {
+                    opacity: 1;
+                    box-shadow: 0 0 0 3px #2a5d68;
+                }
+                
+                .thumbnail img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                
+                /* View Rooms Button */
+                .view-rooms-button-container {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 30px;
+                }
+                
+                .view-rooms-button {
+                    background-color: #2a5d68;
+                    color: white;
+                    border: none;
+                    border-radius: 30px;
+                    padding: 12px 25px;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                }
+                
+                .view-rooms-button:hover {
+                    background-color: #1e444c;
+                    transform: translateY(-2px);
+                    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+                }
+                
+                .view-rooms-button i {
+                    font-size: 1.2rem;
+                }
+                
+                /* Responsive Adjustments */
+                @media (max-width: 768px) {
+                    .gallery-tabs {
+                        grid-template-columns: 1fr 1fr;
+                        gap: 8px;
+                    }
+                    
+                    .gallery-tab {
+                        width: 100%;
+                        font-size: 0.9rem;
+                        padding: 8px 15px;
+                    }
+                    
+                    .slider-container {
+                        height: 350px;
+                    }
+                    
+                    .thumbnail {
+                        width: 60px;
+                        height: 60px;
+                    }
+                    
+                    .view-rooms-button {
+                        font-size: 1rem;
+                        padding: 10px 20px;
+                    }
+                }
+                
+                @media (max-width: 480px) {
+                    .gallery-tabs {
+                        grid-template-columns: 1fr 1fr;
+                        gap: 8px;
+                    }
+                    
+                    .gallery-tab {
+                        width: 100%;
+                        font-size: 0.9rem;
+                        padding: 8px 15px;
+                    }
+                    
+                    .slider-container {
+                        height: 250px;
+                    }
+                    
+                    .thumbnail {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            </style>
+        </div>
+    </div>
+
+    <div id="nearby-modal" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close">&times;</span>
+            <h2>Address</h2>
+            <div class="modal-sections">
+                <div class="modal-section">
+                    <div class="address-card">
+                        <div class="address-content">
+                            <h3>📍 Property Address</h3>
+                            <p>Kenwoods Farmstay<br>Vikramgad, Palghar, Maharashtra</p>
+                            <a href="https://www.google.com/maps/place/Kenwoods+Farmstay+-+Best+Farmhouse+Near+Mumbai/@19.7552272,73.0881946,20z/data=!4m6!3m5!1s0x3be7132ceaf8f075:0x529996c6759cf43!8m2!3d19.755174!4d73.0883493!16s%2Fg%2F11c6cr0ccr?hl=en&entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" 
+                               target="_blank" 
+                               class="map-button">
+                                <i class="fas fa-map-marker-alt"></i> Open in Google Maps
+                            </a>
+                        </div>
+                        <div class="location-preview">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1016.7487456442033!2d73.08790495872193!3d19.75517000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7132ceaf8f075%3A0x529996c6759cf43!2sKenwoods%20Farmstay%20-%20Best%20Farmhouse%20Near%20Mumbai!5e0!3m2!1sen!2sin!4v1670340823755!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0; border-radius: 8px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-section">
+                    <h3>🚗 How to Reach</h3>
+                    <ul class="transport-options">
+                        <li>
+                            <strong>By Car:</strong> Just 2 hours drive from Mumbai and 3.5 hours from Surat. The location is easily accessible via NH48 and offers a scenic drive through rural Maharashtra.
+                        </li>
+                        <li>
+                            <strong>By Train:</strong> The nearest major railway station is Palghar Railway Station (approximately 40 km). From there, you can hire a taxi to reach the farmstay. 
+                        </li>
+                        <li>
+                            <strong>By Bus:</strong> Regular bus services are available from Mumbai to Vikramgad. From the bus stop, you can hire an auto-rickshaw or taxi to reach the property.
+                        </li>
+                        <li>
+                            <strong>By Air:</strong> Nearest airport is at Mumbai. You can hire a cab from the airport to the farmstay.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="emergency-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Emergency Contacts</h2>
+            <div class="modal-sections">
+                <div class="modal-section emergency">
+                    <div class="emergency-contacts">
+                        <div class="contact-item">
+                            <h4>Emergency Services</h4>
+                            <p>Police: 100</p>
+                            <p>Ambulance/Medical: 102, 108</p>
+                            <p>Fire: 101</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h4>Disaster Management</h4>
+                            <p>Control Room: 0177-2929688, 2629439</p>
+                            <p>2629939, 2628940</p>
+                            <p>Helpline: 1070, 1077</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h4>Other Helplines</h4>
+                            <p>Crime Stopper: 1090</p>
+                            <p>Women Helpline: 1091</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h4>Property Contacts</h4>
+                            <p>Property Manager (Mangesh Phalke): 9867935880</p>
+                            <p>Host Contact (Desiree Gonsalves): 9821135880</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="rules-modal" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close">&times;</span>
+            <h2>WiFi & House Rules</h2>
+
+            <!-- WiFi Section -->
+            <div class="rules-section wifi-section">
+                <h3><i class="fas fa-wifi"></i> WiFi Details</h3>
+                <div class="wifi-details">
+                    <div class="wifi-item">
+                        <span class="label">Network:</span>
+                        <span class="value">Kenwoods Farmstay</span>
+                    </div>
+                    <div class="wifi-item">
+                        <span class="label">Password:</span>
+                        <span class="value">to be inserted</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- House Rules Section -->
+            <div class="rules-section">
+                <h3><i class="fas fa-scroll"></i> House Rules</h3>
+                <div class="rules-list">
+                    <div class="rule-item">
+                        <i class="fas fa-paw"></i>
+                        <p>We're pet friendly (pets are chargeable at Rs. 1000/day)</p>
+                    </div>
+                    
+                    <div class="rule-item">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <p>Check-in time: 1:00 PM</p>
+                    </div>
+                    
+                    <div class="rule-item">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <p>Check-out time: 10:00 AM (late check-out, if available, will be permitted at an extra charge)</p>
+                    </div>
+                    
+                    <div class="rule-item">
+                        <i class="fas fa-id-card"></i>
+                        <p>Each guest must have a valid ID. After completing necessary forms, security deposits stated earlier would be collected</p>
+                    </div>
+                    
+                    <div class="rule-item">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <p>Any damage to the property will be chargeable</p>
+                    </div>
+
+                    <div class="rule-item">
+                        <i class="fas fa-ban"></i>
+                        <p>Drugs and illegal substances are strictly prohibited</p>
+                    </div>
+                    
+                    <div class="rule-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <p>Property owner/manager would not be responsible for any personal item lost/damaged</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="specials-modal" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close">&times;</span>
+            
+            <div class="things-to-do-container">
+                <!-- At Kenwoods Section -->
+                <div class="things-section at-kenwoods">
+                    <div class="section-header">
+                        <h3>AT KENWOOD'S FARMSTAY</h3>
+                        <div class="section-divider"></div>
+                    </div>
+                    
+                    <div class="activities-grid">
+                        <!-- Activity 1 -->
+                        <div class="activity-card">
+                            <div class="activity-image">
+                                <img src="assets/thingstodo/gameroom.jpg" alt="Games Room">
+                            </div>
+                            <div class="activity-details">
+                                <h4>GAMES ROOM</h4>
+                                <p>"Challenge your sibling or dad to Table Tennis or enjoy a relaxing game of Carrom, Cricket kit, Badminton rackets, Board Games, and Books are available for your leisure, catering to all interests."</p>
+                    </div>
+                </div>
+
+                        <!-- Activity 2 -->
+                        <div class="activity-card">
+                            <div class="activity-image">
+                                <img src="assets/thingstodo/cycle.jpg" alt="Cycle-On Hire">
+                    </div>
+                            <div class="activity-details">
+                                <h4>CYCLE-ON HIRE</h4>
+                                <p>"Discover the surroundings on two wheels – bicycles are readily available for your exploration and enjoyment during your stay."</p>
+                    </div>
+                </div>
+
+                        <!-- Activity 3 -->
+                        <div class="activity-card">
+                            <div class="activity-image">
+                                <img src="assets/thingstodo/tractor.jpg" alt="Tractor Ride">
+                    </div>
+                            <div class="activity-details">
+                                <h4>TRACTOR RIDE</h4>
+                                <p>Enjoy a unique and exciting tractor ride, perfect for family fun. Hire the local tractor to journey to Sajan Dam, where you can bask in the splendor of an untouched, serene lake. An hour of pure beauty awaits.</p>
+                    </div>
+                </div>
+                        
+                        <!-- Activity 4 -->
+                        <div class="activity-card">
+                            <div class="activity-image">
+                                <img src="assets/thingstodo/swimming.jpg" alt="Swimming">
+            </div>
+                            <div class="activity-details">
+                                <h4>SWIMMING POOL</h4>
+                                <p>"Take a refreshing dip in our swimming pool, perfect for cooling off on warm days or enjoying some leisurely laps. The pool area offers a relaxing space for both adults and children to enjoy aquatic fun."</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Activity 5 -->
+                        <div class="activity-card">
+                            <div class="activity-image">
+                                <img src="assets/thingstodo/ducks.jpg" alt="Feeding Ducks/Fish">
+                            </div>
+                            <div class="activity-details">
+                                <h4>FEEDING DUCKS/FISH</h4>
+                                <p>"For a leisurely moment, engage in feeding the koi fish and meet Donny and Daisy, our friendly ducks, in their tranquil pond setting."</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Activity 6 -->
+                        <div class="activity-card">
+                            <div class="activity-image">
+                                <img src="assets/thingstodo/naturewalk.jpg" alt="Nature Walk">
+                            </div>
+                            <div class="activity-details">
+                                <h4>NATURE WALK</h4>
+                                <p>"Explore the 200-meter rustic walking path around the property to reconnect with nature and maintain your fitness."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Beyond Kenwoods Section -->
+                <div class="things-section beyond-kenwoods">
+                    <div class="section-header">
+                        <h3>BEYOND KENWOOD'S</h3>
+                        <div class="section-divider"></div>
+                    </div>
+                    
+                    <div class="activities-grid">
+                        <!-- Activity 1 -->
+                        <div class="activity-card">
+                            <div class="activity-image">
+                                <img src="assets/thingstodo/sajjan.jpg" alt="Sajan Dam">
+                            </div>
+                            <div class="activity-details">
+                                <h4>SAJAN DAM</h4>
+                                <p>"Just a brief 10-minute drive from Kenwoods lies the secluded Sajan Dam reservoir, an ideal haven for nature enthusiasts."</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Activity 2 -->
+                        <div class="activity-card">
+                            <div class="activity-image">
+                                <img src="assets/thingstodo/dhabosa.jpg" alt="Dhabosa Waterfalls">
+                            </div>
+                            <div class="activity-details">
+                                <h4>DHABOSA WATERFALLS</h4>
+                                <p>"Situated 14 kilometers away from Jawhar, this is one of the tallest perennial waterfalls near Mumbai. Plunging from a height of 300 feet, it holds a mesmerizing charm, especially in the monsoon season."</p>
+                            </div>
+                        </div>
+
+                        <!-- Activity 3 - Jawahar Fort -->
+                        <div class="activity-card">
+                            <div class="activity-image">
+                                <img src="assets/thingstodo/jawahar.jpg" alt="Jawahar Fort">
+                            </div>
+                            <div class="activity-details">
+                                <h4>JAWAHAR FORT</h4>
+                                <p>"The Jai Vilas Palace, an enchanting historic tourist spot, crowns the hilltop. It's architecture gracefully blends Indian and Western styles. If you have a few days to spare at the farm, dedicating an hour's drive for this visit is truly rewarding."</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Activity 4 - Warli Art -->
+                        <div class="activity-card">
+                            <div class="activity-image">
+                                <img src="assets/thingstodo/warli.jpg" alt="Warli Art">
+                            </div>
+                            <div class="activity-details">
+                                <h4>WARLI ART</h4>
+                                <p>"Vikramgad serves as the birthplace and hub of the enduring tribal art, still actively pursued. Rooted in nature and agrarian living, this art style features red clay walls and white flour-water paint, applied using bamboo sticks."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <style>
+                #specials-modal .modal-content {
+                    max-width: 1000px;
+                    background-color: #f9f9f9;
+                    padding: 30px;
+                }
+                
+                #specials-modal h2 {
+                    text-align: center;
+                    font-size: 2.5rem;
+                    color: #333;
+                    margin-bottom: 15px;
+                    font-weight: 700;
+                }
+                
+                .things-to-do-container {
+                    margin-top: 20px;
+                }
+                
+                .things-section {
+                    margin-bottom: 40px;
+                }
+                
+                .section-header {
+                    margin-bottom: 30px;
+                    text-align: center;
+                    position: relative;
+                }
+                
+                .section-header h3 {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    display: inline-block;
+                    padding: 0 20px;
+                    background-color: #f9f9f9;
+                    position: relative;
+                    z-index: 1;
+                    color: #333;
+                }
+                
+                .section-divider {
+                    height: 2px;
+                    background-color: #ddd;
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    left: 0;
+                    z-index: 0;
+                }
+                
+                .at-kenwoods .section-header h3 {
+                    color: #4a8fa1;
+                }
+                
+                .beyond-kenwoods .section-header h3 {
+                    color: #6b9b37;
+                }
+                
+                .activities-grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 25px;
+                }
+                
+                .activity-card {
+                    background-color: #fff;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                
+                .activity-card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+                }
+                
+                .activity-image {
+                    height: 200px;
+                    overflow: hidden;
+                }
+                
+                .activity-image img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.5s ease;
+                }
+                
+                .activity-card:hover .activity-image img {
+                    transform: scale(1.05);
+                }
+                
+                .activity-details {
+                    padding: 20px;
+                }
+                
+                .activity-details h4 {
+                    font-size: 1.3rem;
+                    margin: 0 0 12px;
+                    font-weight: 600;
+                    color: #333;
+                    text-align: center;
+                }
+                
+                .activity-details p {
+                    font-size: 0.95rem;
+                    line-height: 1.6;
+                    color: #555;
+                    margin: 0;
+                }
+                
+                .at-kenwoods .activity-details h4 {
+                    color: #4a8fa1;
+                }
+                
+                .beyond-kenwoods .activity-details h4 {
+                    color: #6b9b37;  
+                }
+                
+                @media (max-width: 992px) {
+                    .activities-grid {
+                        grid-template-columns: 1fr;
+                    }
+                    
+                    .activity-image {
+                        height: 250px;
+                    }
+                }
+                
+                @media (max-width: 768px) {
+                    #specials-modal h2 {
+                        font-size: 2rem;
+                    }
+                    
+                    .section-header h3 {
+                        font-size: 1.3rem;
+                    }
+                    
+                    .activity-details h4 {
+                        font-size: 1.2rem;
+                    }
+                    
+                    .activity-details p {
+                        font-size: 0.9rem;
+                    }
+                }
+            </style>
+        </div>
+    </div>
+
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Leave a Feedback</h2>
+            <form id="feedback-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Feedback" required></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="host-favorites-modal" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close">&times;</span>
+            <h2>MENU</h2>
+            
+            <div class="menu-package">
+                <h3>MEAL PACKAGE</h3>
+                
+                <div class="meal-section">
+                    <h4>BREAKFAST</h4>
+                    <ul>
+                        <li>Upma/Poha/Idli-chutney/MisalPao (any 2)</li>
+                        <li>Omelette/Fried/Burji/Boiled Eggs (any 1)</li>
+                        <li>Choco/Regular Cornflakes/Milk</li>
+                        <li>Toast/Butter/Jam</li>
+                        <li>Seasonal Fruit</li>
+                        <li>Tea/Coffee</li>
+                </ul>
+            </div>
+
+                <div class="meal-section">
+                    <h4>LUNCH/DINNER</h4>
+                    <ul>
+                        <li>Veg: 1 Veg Gravy + 1 Veg Dry</li>
+                        <li>Non-Veg: 1 Chicken Gravy + 1 Veg Dry</li>
+                        <li>Dal/Rice/Roti/Papad/Pickle</li>
+                        <li>Dessert</li>
+                    </ul>
+                </div>
+
+                <div class="meal-section">
+                    <h4>TEA</h4>
+                    <ul>
+                        <li>Sev Puri/Bhel/Toastee</li>
+                        <li>Sandwiches/Bhajiyas (Any two)</li>
+                    </ul>
+                </div>
+
+                <div class="meal-section charges">
+                    <h4>MEAL PACKAGE CHARGES</h4>
+                    <ul>
+                        <li>Veg/Non-Veg: ₹2000 per person per day</li>
+                        <li>Kids (6 - 11 years): 50% of the charges</li>
+                        <li>Kids (Below 6 years): ₹600 per day</li>
+                    </ul>
+                    </div>
+
+                <div class="meal-section">
+                    <h4>BBQ</h4>
+                    <p>BBQ available at an additional charge of ₹500</p>
+                </div>
+
+                <div class="meal-section notes">
+                    <h4>Notes:</h4>
+                    <ul>
+                        <li>Jain meals are available.</li>
+                        <li>The Chef also takes orders for Beverages, Veg/Non-Veg Starters & more (subject to availability). This à la carte menu is available over and above the meal package.</li>
+                        <li>No outside food is allowed. Tea/Coffee will be served with Breakfast/Tea time. Available on order at other times.</li>
+                        <li>Drivers' accommodation & basic meals available at ₹1900 per day.</li>
+                        <li>Tractor ride to the dam available for ₹1900. Sit comfortably on mattresses placed in the back as you journey and return at your leisure.</li>
+                    </ul>
+                    </div>
+                </div>
+
+            <style>
+                .menu-package {
+                    padding: 20px;
+                    background-color: #fff;
+                    border-radius: 10px;
+                }
+                
+                .meal-section {
+                    margin-bottom: 30px;
+                }
+                
+                .meal-section h4 {
+                    color: #2a5d68;
+                    font-size: 1.2rem;
+                    margin-bottom: 12px;
+                    padding-bottom: 8px;
+                    border-bottom: 1px solid #eaeaea;
+                }
+                
+                .meal-section ul {
+                    padding-left: 20px;
+                    list-style-type: none;
+                }
+                
+                .meal-section li {
+                    padding: 6px 0;
+                    color: #444;
+                    position: relative;
+                }
+                
+                .meal-section li:before {
+                    content: "•";
+                    color: #2a5d68;
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                }
+                
+                .meal-section.charges {
+                    background-color: #f9f9f9;
+                    padding: 15px;
+                    border-radius: 8px;
+                    border-left: 4px solid #2a5d68;
+                }
+                
+                .meal-section.charges h4 {
+                    border-bottom: none;
+                    margin-bottom: 8px;
+                }
+                
+                .meal-section.notes {
+                    background-color: #fffbf2;
+                    padding: 15px;
+                    border-radius: 8px;
+                    border-left: 4px solid #f0c14b;
+                }
+                
+                .meal-section.notes h4 {
+                    color: #886a2a;
+                    border-bottom: none;
+                    margin-bottom: 8px;
+                }
+                
+                .meal-section.notes li:before {
+                    color: #f0c14b;
+                }
+                
+                @media (max-width: 768px) {
+                    .menu-package {
+                        padding: 15px;
+                    }
+                    
+                    .meal-section h4 {
+                        font-size: 1.1rem;
+                    }
+                }
+            </style>
+        </div>
+    </div>
+
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close">&times;</span>
+            <h2>Checking Out Guide</h2>
+            
+            <div class="modal-sections">
+                <div class="checkout-section">
+                    <h3>Checkout Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>Night Before</h4>
+                            <ul>
+                                <li>Pack your belongings</li>
+                                <li>Collect all valuables</li>
+                                <li>Set alarm for checkout time</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Morning Of</h4>
+                            <ul>
+                                <li>Checkout time: 11:00 AM</li>
+                                <li>Breakfast ends at 10:00 AM</li>
+                                <li>Housekeeping final check at 10:30 AM</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkout-section">
+                    <h3>Checkout Checklist</h3>
+                    <div class="checklist-grid">
+                        <div class="checklist-item">
+                            <h4>Kitchen</h4>
+                            <ul>
+                                <li>Empty refrigerator</li>
+                                <li>Clean used utensils</li>
+                                <li>Dispose of garbage</li>
+                                <li>Turn off all appliances</li>
+                            </ul>
+                        </div>
+                        <div class="checklist-item">
+                            <h4>Rooms</h4>
+                            <ul>
+                                <li>Collect all belongings</li>
+                                <li>Place used towels in bathroom</li>
+                                <li>Turn off AC/heater</li>
+                                <li>Close all windows</li>
+                            </ul>
+                        </div>
+                        <div class="checklist-item">
+                            <h4>Final Steps</h4>
+                            <ul>
+                                <li>Return keys to lockbox</li>
+                                <li>Close and lock all doors</li>
+                                <li>Complete feedback form</li>
+                                <li>Text host after leaving</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkout-section">
+                    <h3>Transportation Options</h3>
+                    <div class="transport-options">
+                        <div class="transport-item">
+                            <h4>Airport Transfer</h4>
+                            <p>• Pre-book through reception</p>
+                            <p>• Fixed rate: ₹1200</p>
+                            <p>• Book 4 hours in advance</p>
+                        </div>
+                        <div class="transport-item">
+                            <h4>Local Taxi</h4>
+                            <p>• Ola/Uber available</p>
+                            <p>• Auto stand nearby</p>
+                            <p>• Reception can arrange</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkout-section">
+                    <h3>Important Notes</h3>
+                    <div class="notes-container">
+                        <div class="note">
+                            <h4>Late Checkout</h4>
+                            <p>• Request 24 hours before</p>
+                            <p>• Subject to availability</p>
+                            <p>• Additional charges may apply</p>
+                        </div>
+                        <div class="note">
+                            <h4>Luggage Storage</h4>
+                            <p>• Available at reception</p>
+                            <p>• Free for same day</p>
+                            <p>• Maximum 8 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="reviews-modal" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close">&times;</span>
+            <h2>Guest Reviews</h2>
+            
+            <!-- Google Reviews Link -->
+            <div class="review-platform-links">
+                <a href="https://www.google.com/maps/place/Kenwoods+Farmstay+-+Best+Farmhouse+Near+Mumbai/@19.7552272,73.0881946,20z/data=!4m8!3m7!1s0x3be7132ceaf8f075:0x529996c6759cf43!8m2!3d19.755174!4d73.0883493!9m1!1b1!16s%2Fg%2F11c6cr0ccr?hl=en&entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoASAFQAw%3D%3D" 
+                   target="_blank" 
+                   class="platform-button google">
+                    <i class="fab fa-google"></i>
+                    View More Reviews on Google
+                </a>
+            </div>
+
+            <!-- Reviews Grid -->
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p class="review-text">"What a lovely stay it was! I visited this with my school friends. From the moment we entered to the time we left, it was simply amazing.
+
+                            Full marks for the decor, cleanliness, staff attitude and lip smacking food.
+                            
+                            Its just couple of hours away from Thane, hence the journey doesn't tire you. If you do get tired, then this place will put you at ease completely.
+                            
+                            I have already recommended this place to a few people. And I look forward to coming again...
+                            "</p>
+                        <p class="reviewer-name">- Hema Iyer</p>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p class="review-text">"My second trip to this place. Two seasons, monsoons in July and Dec, both amazing times to visit. Love the tastefully done up rooms and great food too. Lovely set up for group outings.  Absolutely planning to repeat it with different sets of friends. Thanks Desiree and the team."</p>
+                        <p class="reviewer-name">- Surekha Shenoy</p>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p class="review-text">"Every nook and corner of Kenwoods Farmstay is crafted with love, care, and attention to detail. We had a wonderful overnight stay here, though it almost feels like a crime to stay for just one night. The food was delicious; there's plenty of open space for kids, pets, and adults to gallivant in; the beds were cozy; and the staff went above and beyond, especially with our pets. A special thanks to Alfred, the manager, for making our stay so delightful and accommodating such a large group, and to Desiree for designing this beautiful getaway with such warmth and thoughtfulness."</p>
+                        <p class="reviewer-name">- Dhvani Solanki</p>
+                    </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p class="review-text">"Kenwoods Farm Stay was an absolute gem! From the moment I arrived, I felt completely at ease with the stunning views and peaceful atmosphere. The accommodation was cozy and spotless, with thoughtful touches that made it feel like home. I loved exploring the farm and relaxing in the beautiful outdoor spaces. It was the perfect escape from the city, and I can't wait to return."</p>
+                        <p class="reviewer-name">- Usman Januja</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="amenities-modal" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close">&times;</span>
+            <h2>AMENITIES</h2>
+            <h3 class="amenities-subtitle">KENWOODS FARMSTAY</h3>
+            
+            <div class="amenities-container">
+                <div class="amenities-section outdoors">
+                    <div class="amenities-header">
+                        <i class="fas fa-tree"></i>
+                        <h3>OUTDOORS</h3>
+                </div>
+                    <ul class="amenities-list">
+                        <li><i class="fas fa-check"></i> Swimming Pool (Kenwoods)</li>
+                        <li><i class="fas fa-check"></i> 2 Terrace Sitouts (Kenwoods)</li>
+                        <li><i class="fas fa-check"></i> Games Room</li>
+                        <li><i class="fas fa-check"></i> Basketball Hoop</li>
+                        <li><i class="fas fa-check"></i> Cycles</li>
+                        <li><i class="fas fa-check"></i> Wi-Fi</li>
+                        <li><i class="fas fa-check"></i> Parking</li>
+                        <li><i class="fas fa-check"></i> Duck/Fish Pond</li>
+                        <li><i class="fas fa-check"></i> Genset</li>
+                        <li><i class="fas fa-check"></i> Outdoor CCTV</li>
+                    </ul>
+                </div>
+
+                <div class="amenities-section indoors">
+                    <div class="amenities-header">
+                        <i class="fas fa-home"></i>
+                        <h3>INDOORS</h3>
+                </div>
+                    <ul class="amenities-list">
+                        <li><i class="fas fa-check"></i> AC Bedrooms</li>
+                        <li><i class="fas fa-check"></i> Ensuite Bathrooms</li>
+                        <li><i class="fas fa-check"></i> Towels and Toiletries</li>
+                        <li><i class="fas fa-check"></i> Wardrobe with Lock</li>
+                        <li><i class="fas fa-check"></i> Hair Dryer/Ironing Board</li>
+                        <li><i class="fas fa-check"></i> Bluetooth Music System</li>
+                        <li><i class="fas fa-check"></i> Smart TV</li>
+                        <li><i class="fas fa-check"></i> Karaoke Set</li>
+                        <li><i class="fas fa-check"></i> Solar-powered Geyser</li>
+                        <li><i class="fas fa-check"></i> Inverter</li>
+                        <li><i class="fas fa-check"></i> Central Kitchen</li>
+                        <li><i class="fas fa-check"></i> In-House Chef</li>
+                        <li><i class="fas fa-check"></i> Resident Manager</li>
+                        <li><i class="fas fa-check"></i> Fire Extinguisher</li>
+                        <li><i class="fas fa-check"></i> Local Massage</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <style>
+                #amenities-modal .modal-content {
+                    background-color: #f8f9fa;
+                }
+                
+                #amenities-modal h2 {
+                    text-align: center;
+                    color: #2a5d68;
+                    margin-bottom: 5px;
+                    font-weight: 700;
+                }
+                
+                .amenities-subtitle {
+                    text-align: center;
+                    color: #555;
+                    margin-top: 0;
+                    margin-bottom: 30px;
+                    font-size: 1.1rem;
+                }
+                
+                .amenities-container {
+                    display: flex;
+                    gap: 30px;
+                    justify-content: space-between;
+                }
+                
+                .amenities-section {
+                    flex: 1;
+                    border-radius: 12px;
+                    padding: 25px;
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                }
+                
+                .amenities-section.outdoors {
+                    background-color: #e8f4f8;
+                    border-left: 5px solid #4a8fa1;
+                }
+                
+                .amenities-section.indoors {
+                    background-color: #f0f6e6;
+                    border-left: 5px solid #6b9b37;
+                }
+                
+                .amenities-header {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                }
+                
+                .amenities-header i {
+                    font-size: 2rem;
+                    margin-right: 15px;
+                }
+                
+                .amenities-header h3 {
+                    margin: 0;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+                
+                .outdoors .amenities-header i,
+                .outdoors .amenities-header h3 {
+                    color: #4a8fa1;
+                }
+                
+                .indoors .amenities-header i, 
+                .indoors .amenities-header h3 {
+                    color: #6b9b37;
+                }
+                
+                .amenities-list {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                }
+                
+                .amenities-list li {
+                    margin-bottom: 12px;
+                    font-size: 1.05rem;
+                    display: flex;
+                    align-items: center;
+                }
+                
+                .amenities-list li i {
+                    margin-right: 10px;
+                    font-size: 0.9rem;
+                    width: 18px;
+                    height: 18px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    color: white;
+                }
+                
+                .outdoors .amenities-list li i {
+                    background-color: #4a8fa1;
+                }
+                
+                .indoors .amenities-list li i {
+                    background-color: #6b9b37;
+                }
+                
+                @media (max-width: 768px) {
+                    .amenities-container {
+                        flex-direction: column;
+                    }
+                    
+                    .amenities-section {
+                        margin-bottom: 20px;
+                    }
+                    
+                    .amenities-header h3 {
+                        font-size: 1.3rem;
+                    }
+                    
+                    .amenities-list li {
+                        font-size: 1rem;
+                    }
+                }
+            </style>
+        </div>
+    </div>
+
+    <!-- Add new Rooms Modal -->
+    <div id="rooms-modal" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close">&times;</span>
+            <p class="modal-description">Experience three beautiful villas spread over 3.5 acres</p>
+            
+            <!-- Villa Category Tabs -->
+            <div class="villa-tabs">
+                <button class="villa-tab active" data-villa="kenwood">Kenwoods</button>
+                <button class="villa-tab" data-villa="elfreda">Elfreda</button>
+                <button class="villa-tab" data-villa="siddes">SidDes</button>
+                            </div>
+            
+            <!-- Villa Information Sections -->
+            <div class="villa-sections">
+                <!-- kenwood Villa Section -->
+                <div class="villa-section active" id="kenwood-section">
+                    <div class="villa-gallery">
+                        <div class="villa-slider kenwood-slider">
+                            <div class="slider-container">
+                                <div class="slider-wrapper">
+                                    <img src="assets/rooms/kenwood/1.webp" alt="kenwood Villa" class="slider-image active">
+                                    <img src="assets/rooms/kenwood/2.webp" alt="kenwood Villa" class="slider-image">
+                                    <img src="assets/rooms/kenwood/3.webp" alt="kenwood Villa" class="slider-image">
+                                    <img src="assets/rooms/kenwood/4.webp" alt="kenwood Villa" class="slider-image">
+                                    <img src="assets/rooms/kenwood/5.webp" alt="kenwood Villa" class="slider-image">
+                                    <img src="assets/rooms/kenwood/6.webp" alt="kenwood Villa" class="slider-image">
+                                    <img src="assets/rooms/kenwood/7.webp" alt="kenwood Villa" class="slider-image">
+                                    <img src="assets/rooms/kenwood/8.webp" alt="kenwood Villa" class="slider-image">
+                                    <img src="assets/rooms/kenwood/9.webp" alt="kenwood Villa" class="slider-image">
+                                    <img src="assets/rooms/kenwood/10.webp" alt="kenwood Villa" class="slider-image">
+                                    <img src="assets/rooms/kenwood/11.webp" alt="kenwood Villa" class="slider-image">
+                                </div>
+                                <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
+                                <div class="slider-counter">1 / 11</div>
+                            </div>
+                            <div class="slider-thumbnails">
+                                <div class="thumbnail active" data-index="0"><img src="assets/rooms/kenwood/1.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="1"><img src="assets/rooms/kenwood/2.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="2"><img src="assets/rooms/kenwood/3.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="3"><img src="assets/rooms/kenwood/4.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="4"><img src="assets/rooms/kenwood/5.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="5"><img src="assets/rooms/kenwood/6.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="6"><img src="assets/rooms/kenwood/7.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="7"><img src="assets/rooms/kenwood/8.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="8"><img src="assets/rooms/kenwood/9.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="9"><img src="assets/rooms/kenwood/10.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="10"><img src="assets/rooms/kenwood/11.webp" alt="Thumbnail"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="villa-info">
+                        <h3>Kenwoods</h3>
+                        <p class="villa-subtitle">The 5+1 bedroom suite Villa - Farmhouse With Swimming Pool Near Mumbai</p>
+                        
+                        <div class="villa-features">
+                            <div class="feature"><i class="fas fa-bed"></i> 6 Bedrooms</div>
+                            <div class="feature"><i class="fas fa-swimming-pool"></i> Swimming Pool</div>
+                            <div class="feature"><i class="fas fa-gamepad"></i> Games Room</div>
+                            <div class="feature"><i class="fas fa-mountain"></i> Scenic Views</div>
+                            <div class="feature"><i class="fas fa-utensils"></i> Dedicated Chef</div>
+                        </div>
+                        
+                        <div class="villa-description">
+                            <div class="description-section">
+                                <h4>INDOORS</h4>
+                                <p>5-bedroom villa with an additional studio suite, spread over three floors. All bedrooms have ensuite bathrooms. Features include a living room with Bluetooth music system, mini bar with fridge, and Smart TVs on the ground floor and 2nd-floor suite. Full WiFi coverage throughout.</p>
+                            </div>
+                            
+                            <div class="description-section">
+                                <h4>OUTDOOR</h4>
+                                <p>Swimming pool with sunken bar and pool floats. Property includes karaoke set and is fully staffed.</p>
+                            </div>
+                            
+                            <div class="description-section">
+                                <h4>LAYOUT</h4>
+                                <p>• Ground Floor: 2 bedrooms with ensuite bathrooms, living room, dining area, bar, kitchen<br>
+                                • First Floor: 3 bedrooms with ensuite bathrooms, 2 terrace sit-outs<br>
+                                • Top Floor: Master suite with kitchenette, bathroom, and balcony</p>
+                            </div>
+                            
+                            <div class="description-section">
+                                <h4>IDEAL FOR</h4>
+                                <p>Celebrations, weddings, pre-wedding functions, family gatherings, friends reunions, corporate offsites.</p>
+                            </div>
+                            
+                            <div class="description-section pricing-section">
+                                <h4>PRICING</h4>
+                                <div class="pricing-details">
+                                    <div class="pricing-row">
+                                        <div class="pricing-label">Weekdays (Mon-Thu):</div>
+                                        <div class="pricing-value">Minimum booking of 5 bedrooms for up to 10 guests at ₹32,500 + GST per day.</div>
+                                    </div>
+                                    <div class="pricing-row">
+                                        <div class="pricing-label">Weekends (Fri-Sun):</div>
+                                        <div class="pricing-value">Minimum booking of 6 bedrooms for up to 12 guests at ₹41,000 + GST per day.</div>
+                                    </div>
+                                    <div class="pricing-row">
+                                        <div class="pricing-label">Capacity:</div>
+                                        <div class="pricing-value">14 persons can sleep comfortably.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Elfreda Villa Section -->
+                <div class="villa-section" id="elfreda-section">
+                    <div class="villa-gallery">
+                        <div class="villa-slider elfreda-slider">
+                            <div class="slider-container">
+                                <div class="slider-wrapper">
+                                    <img src="assets/rooms/elfreda/1.webp" alt="Elfreda Villa" class="slider-image active">
+                                    <img src="assets/rooms/elfreda/2.webp" alt="Elfreda Villa" class="slider-image">
+                                    <img src="assets/rooms/elfreda/3.webp" alt="Elfreda Villa" class="slider-image">
+                                    <img src="assets/rooms/elfreda/4.webp" alt="Elfreda Villa" class="slider-image">
+                                    <img src="assets/rooms/elfreda/5.webp" alt="Elfreda Villa" class="slider-image">
+                                    <img src="assets/rooms/elfreda/6.webp" alt="Elfreda Villa" class="slider-image">
+                                </div>
+                                <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
+                                <div class="slider-counter">1 / 6</div>
+                            </div>
+                            <div class="slider-thumbnails">
+                                <div class="thumbnail active" data-index="0"><img src="assets/rooms/elfreda/1.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="1"><img src="assets/rooms/elfreda/2.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="2"><img src="assets/rooms/elfreda/3.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="3"><img src="assets/rooms/elfreda/4.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="4"><img src="assets/rooms/elfreda/5.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="5"><img src="assets/rooms/elfreda/6.webp" alt="Thumbnail"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="villa-info">
+                        <h3>Elfreda</h3>
+                        <p class="villa-subtitle">The 1 bedroom suite Villa - Best Couple Getaway</p>
+                        
+                        <div class="villa-features">
+                            <div class="feature"><i class="fas fa-bed"></i> 1 Bedroom</div>
+                            <div class="feature"><i class="fas fa-tree"></i> Garden Access</div>
+                            <div class="feature"><i class="fas fa-utensils"></i> Kitchenette</div>
+                            <div class="feature"><i class="fas fa-couch"></i> Private Lounge</div>
+                            <div class="feature"><i class="fas fa-mountain"></i> Nature Views</div>
+                        </div>
+                        
+                        <div class="villa-description">
+                            <div class="description-section">
+                                <h4>INDOORS</h4>
+                                <p>One-bedroom villa with ensuite bathroom featuring a king-size bed and sofa-cum-bed. Includes a breakfast nook with table for 4, TV with TataSky connection, Alexa music system, and books/board games.</p>
+                            </div>
+                            
+                            <div class="description-section">
+                                <h4>OUTDOOR</h4>
+                                <p>Covered alfresco dining area and small lawn. Perfect for peaceful retreats in nature.</p>
+                            </div>
+                            
+                            <div class="description-section">
+                                <h4>LAYOUT</h4>
+                                <p>Single-level villa with living room, bedroom with king-sized bed and pull-out day-bed, two bathrooms, and a kitchenette.</p>
+                            </div>
+                            
+                            <div class="description-section">
+                                <h4>IDEAL FOR</h4>
+                                <p>Couples, small families, romantic getaways, special occasions, and weekend escapes from Mumbai.</p>
+                            </div>
+                            
+                            <div class="description-section pricing-section">
+                                <h4>PRICING</h4>
+                                <div class="pricing-details">
+                                    <div class="pricing-row">
+                                        <div class="pricing-label">Weekdays (Mon-Thu):</div>
+                                        <div class="pricing-value">₹8,000 + GST per day for up to 2 guests.</div>
+                                    </div>
+                                    <div class="pricing-row">
+                                        <div class="pricing-label">Weekends (Fri-Sun):</div>
+                                        <div class="pricing-value">₹9,900 + GST per day for up to 2 guests.</div>
+                                    </div>
+                                    <div class="pricing-row">
+                                        <div class="pricing-label">Capacity:</div>
+                                        <div class="pricing-value">4 persons can sleep comfortably.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sid-Des Villa Section -->
+                <div class="villa-section" id="siddes-section">
+                    <div class="villa-gallery">
+                        <div class="villa-slider siddes-slider">
+                            <div class="slider-container">
+                                <div class="slider-wrapper">
+                                    <img src="assets/rooms/siddes/1.webp" alt="Sid-Des Villa" class="slider-image active">
+                                    <img src="assets/rooms/siddes/2.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/3.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/4.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/5.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/6.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/7.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/8.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/9.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/10.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/11.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/12.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/13.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/14.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/15.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/16.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/17.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/18.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/19.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/20.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/22.webp" alt="Sid-Des Villa" class="slider-image">
+                                    <img src="assets/rooms/siddes/23.webp" alt="Sid-Des Villa" class="slider-image">
+                                </div>
+                                <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
+                                <div class="slider-counter">1 / 22</div>
+                            </div>
+                            <div class="slider-thumbnails">
+                                <div class="thumbnail active" data-index="0"><img src="assets/rooms/siddes/1.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="1"><img src="assets/rooms/siddes/2.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="2"><img src="assets/rooms/siddes/3.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="3"><img src="assets/rooms/siddes/4.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="4"><img src="assets/rooms/siddes/5.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="5"><img src="assets/rooms/siddes/6.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="6"><img src="assets/rooms/siddes/7.webp" alt="Thumbnail"></div>
+                                <div class="thumbnail" data-index="7"><img src="assets/rooms/siddes/8.webp" alt="Thumbnail"></div>
+                                <!-- More thumbnails can be viewed by scrolling -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="villa-info">
+                        <h3>SidDes</h3>
+                        <p class="villa-subtitle">The 2 bedroom suite Villa - Best Villa in Palghar for Family Picnic</p>
+                        
+                        <div class="villa-features">
+                            <div class="feature"><i class="fas fa-bed"></i> 2 Bedrooms</div>
+                            <div class="feature"><i class="fas fa-hot-tub"></i> Outdoor Jacuzzi</div>
+                            <div class="feature"><i class="fas fa-coffee"></i> Dining Area</div>
+                            <div class="feature"><i class="fas fa-couch"></i> Living Room</div>
+                            <div class="feature"><i class="fas fa-tree"></i> Garden Access</div>
+                            <div class="feature"><i class="fas fa-door-open"></i> Private Entrance</div>
+                        </div>
+                        
+                        <div class="villa-description">
+                            <div class="description-section">
+                                <h4>INDOORS</h4>
+                                <p>Two-bedroom villa with Mediterranean-inspired decor. Ground floor features living-dining area, small bedroom with balcony and ensuite bathroom. Upstairs bedroom has king-size bed, sofa-cum-bed, and ensuite bathroom. Includes kitchen for light meal preparation.</p>
+                            </div>
+                            
+                            <div class="description-section">
+                                <h4>OUTDOOR</h4>
+                                <p>Outdoor jacuzzi in spacious garden with walking path. Includes 2 TVs, Bluetooth music system, and inverter/generator backup.</p>
+                            </div>
+                            
+                            <div class="description-section">
+                                <h4>LAYOUT</h4>
+                                <p>• Ground Floor: Small bedroom with balcony, AC living room, kitchen<br>
+                                • First Floor: Main bedroom with open sit-out area, accessible via indoor or outdoor stairs<br>
+                                • Both bedrooms have ensuite bathrooms with solar-heated water</p>
+                            </div>
+                            
+                            <div class="description-section">
+                                <h4>IDEAL FOR</h4>
+                                <p>Small families, couples, and multi-generational family getaways.</p>
+                            </div>
+                            
+                            <div class="description-section pricing-section">
+                                <h4>PRICING</h4>
+                                <div class="pricing-details">
+                                    <div class="pricing-row">
+                                        <div class="pricing-label">Weekdays (Mon-Thu):</div>
+                                        <div class="pricing-value">₹18,000 + GST per day for up to 4 guests.</div>
+                                    </div>
+                                    <div class="pricing-row">
+                                        <div class="pricing-label">Weekends (Fri-Sun):</div>
+                                        <div class="pricing-value">₹20,000 + GST per day for up to 4 guests.</div>
+                                    </div>
+                                    <div class="pricing-row">
+                                        <div class="pricing-label">Capacity:</div>
+                                        <div class="pricing-value">6 persons can sleep comfortably.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-notes">
+                <h3>Additional Information</h3>
+                <ul>
+                    <li>Meals are not included in the above rates.</li>
+                    <li>Additional guests can be accommodated with an extra charge of ₹2,000 per person per day, and 50% for kids.</li>
+                    <li>The above rates are not applicable for Diwali, Christmas, New Year, and special holidays.</li>
+                    <li>Pets are chargeable at ₹1,000 per day.</li>
+                </ul>
+            </div>
+
+            <style>
+                #rooms-modal .modal-content {
+                    max-width: 1100px;
+                    background-color: #f8f9fa;
+                    padding: 30px;
+                }
+                
+                #rooms-modal h2 {
+                    text-align: center;
+                    color: #2a5d68;
+                    margin-bottom: 5px;
+                    font-weight: 700;
+                    font-size: 2.5rem;
+                }
+                
+                .modal-description {
+                    text-align: center;
+                    color: #555;
+                    margin-top: 0;
+                    margin-bottom: 30px;
+                }
+                
+                /* Villa Tabs */
+                .villa-tabs {
+                    display: flex;
+                    justify-content: center;
+                    gap: 15px;
+                    margin-bottom: 30px;
+                }
+                
+                .villa-tab {
+                    padding: 12px 25px;
+                    background-color: #e0e0e0;
+                    border: none;
+                    border-radius: 30px;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    color: #555;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                }
+                
+                .villa-tab:hover {
+                    background-color: #d0d0d0;
+                }
+                
+                .villa-tab.active {
+                    background-color: #2a5d68;
+                    color: white;
+                }
+                
+                /* Villa Sections */
+                .villa-section {
+                    display: none;
+                }
+                
+                .villa-section.active {
+                    display: block;
+                }
+                
+                /* Villa Info and Content */
+                .villa-info {
+                    margin: 30px 0;
+                    text-align: center;
+                }
+                
+                .villa-info h3 {
+                    font-size: 2rem;
+                    color: #2a5d68;
+                    margin-bottom: 5px;
+                    font-weight: 700;
+                }
+                
+                .villa-subtitle {
+                    color: #555;
+                    font-size: 1.2rem;
+                    font-style: italic;
+                    margin-bottom: 20px;
+                }
+                
+                .villa-info p {
+                    color: #555;
+                    max-width: 800px;
+                    margin: 0 auto 20px;
+                    font-size: 1.1rem;
+                    line-height: 1.5;
+                }
+                
+                /* Villa Features */
+                .villa-features {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 15px;
+                    margin-bottom: 30px;
+                }
+                
+                .feature {
+                    background-color: #e8f4f8;
+                    padding: 10px 20px;
+                    border-radius: 30px;
+                    font-size: 0.95rem;
+                    color: #2a5d68;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+                }
+                
+                .feature i {
+                    font-size: 1rem;
+                }
+                
+                /* Villa Description */
+                .villa-description {
+                    margin-top: 30px;
+                    text-align: left;
+                    max-width: 800px;
+                    margin: 30px auto;
+                    padding: 20px;
+                    background-color: #f9f9f9;
+                    border-radius: 12px;
+                    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+                }
+                
+                .description-section {
+                    margin-bottom: 25px;
+                }
+                
+                .description-section:last-child {
+                    margin-bottom: 0;
+                }
+                
+                .description-section h4 {
+                    color: #2a5d68;
+                    font-size: 1.3rem;
+                    margin-bottom: 12px;
+                    padding-bottom: 8px;
+                    border-bottom: 1px solid #e0e0e0;
+                    font-weight: 600;
+                }
+                
+                .description-section p {
+                    margin-bottom: 10px;
+                    line-height: 1.6;
+                    text-align: left;
+                }
+                
+                .description-section p:last-child {
+                    margin-bottom: 0;
+                }
+                
+                /* Villa Slider */
+                .villa-slider {
+                    margin: 0 auto;
+                    max-width: 800px;
+                }
+                
+                .slider-container {
+                    position: relative;
+                    width: 100%;
+                    aspect-ratio: 4/3;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                    margin-bottom: 15px;
+                    background-color: #f0f0f0;
+                }
+                
+                .slider-wrapper {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                .slider-image {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    opacity: 0;
+                    transition: opacity 0.5s ease;
+                    background-color: #f0f0f0;
+                }
+                
+                .slider-image.active {
+                    opacity: 1;
+                }
+                
+                .slider-nav {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 40px;
+                    height: 40px;
+                    background-color: rgba(255, 255, 255, 0.7);
+                    border: none;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.2rem;
+                    color: #2a5d68;
+                    z-index: 10;
+                    transition: all 0.3s ease;
+                }
+                
+                .slider-nav:hover {
+                    background-color: rgba(255, 255, 255, 0.9);
+                }
+                
+                .slider-nav.prev {
+                    left: 10px;
+                }
+                
+                .slider-nav.next {
+                    right: 10px;
+                }
+                
+                .slider-counter {
+                    position: absolute;
+                    bottom: 15px;
+                    right: 15px;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 15px;
+                    font-size: 0.9rem;
+                    z-index: 10;
+                }
+                
+                .slider-thumbnails {
+                    display: flex;
+                    gap: 10px;
+                    overflow-x: auto;
+                    padding-bottom: 10px;
+                }
+                
+                .thumbnail {
+                    width: 70px;
+                    height: 70px;
+                    flex-shrink: 0;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    cursor: pointer;
+                    opacity: 0.6;
+                    transition: all 0.3s ease;
+                }
+                
+                .thumbnail:hover {
+                    opacity: 0.8;
+                }
+                
+                .thumbnail.active {
+                    opacity: 1;
+                    box-shadow: 0 0 0 3px #2a5d68;
+                }
+                
+                .thumbnail img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                
+                /* Pricing Styles */
+                .pricing-section {
+                    background-color: #f0f6f7;
+                    border-left: 4px solid #2a5d68;
+                    padding: 20px;
+                    border-radius: 8px;
+                }
+                
+                .pricing-details {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                }
+                
+                .pricing-row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    gap: 10px;
+                }
+                
+                .pricing-label {
+                    font-weight: 600;
+                    color: #2a5d68;
+                    min-width: 160px;
+                }
+                
+                .pricing-value {
+                    flex: 1;
+                    color: #444;
+                }
+                
+                .pricing-notes {
+                    max-width: 800px;
+                    margin: 0 auto 30px;
+                    background-color: #fff8e6;
+                    padding: 20px 25px;
+                    border-radius: 12px;
+                    border-left: 4px solid #f0c14b;
+                    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+                }
+                
+                .pricing-notes h3 {
+                    color: #92723d;
+                    font-size: 1.3rem;
+                    margin-bottom: 15px;
+                    padding-bottom: 8px;
+                    border-bottom: 1px solid #f0e0b6;
+                }
+                
+                .pricing-notes ul {
+                    margin: 0;
+                    padding-left: 20px;
+                }
+                
+                .pricing-notes li {
+                    margin-bottom: 8px;
+                    color: #5a5346;
+                    position: relative;
+                }
+                
+                .pricing-notes li:last-child {
+                    margin-bottom: 0;
+                }
+                
+                /* Responsive adjustments */
+                @media (max-width: 768px) {
+                    .villa-tabs {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                    
+                    .villa-tab {
+                        width: 100%;
+                        max-width: 250px;
+                    }
+                    
+                    .slider-container {
+                        height: 350px;
+                    }
+                    
+                    .villa-info h3 {
+                        font-size: 1.7rem;
+                    }
+                    
+                    .villa-subtitle {
+                        font-size: 1.1rem;
+                    }
+                    
+                    .villa-info p {
+                        font-size: 1rem;
+                    }
+                    
+                    .feature {
+                        font-size: 0.85rem;
+                        padding: 8px 15px;
+                    }
+                    
+                    .thumbnail {
+                        width: 60px;
+                        height: 60px;
+                    }
+                    
+                    .description-section h4 {
+                        font-size: 1.2rem;
+                    }
+                    
+                    .description-section p {
+                        font-size: 1rem;
+                    }
+                    
+                    .pricing-row {
+                        flex-direction: column;
+                        gap: 5px;
+                    }
+                    
+                    .pricing-label {
+                        min-width: auto;
+                    }
+                    
+                    .pricing-section, .pricing-notes {
+                        padding: 15px;
+                    }
+                    
+                    .pricing-notes h3 {
+                        font-size: 1.2rem;
+                    }
+                }
+                
+                @media (max-width: 480px) {
+                    .slider-container {
+                        height: 250px;
+                    }
+                    
+                    .thumbnail {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            </style>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
