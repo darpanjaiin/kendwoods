@@ -1710,18 +1710,10 @@
         <div class="modal-content modal-large">
             <p class="modal-description">Experience three beautiful villas spread over 3.5 acres</p>
             
-            <!-- Villa Category Tabs -->
-            <div class="villa-tabs">
-                <button class="villa-tab active" data-villa="kenwood">Kenwoods</button>
-                <button class="villa-tab" data-villa="elfreda">Elfreda</button>
-                <button class="villa-tab" data-villa="siddes">SidDes</button>
-                <button class="villa-tab" data-villa="mowgli">Mowgli's Glass Den</button>
-            </div>
-            
             <!-- Villa Information Sections -->
             <div class="villa-sections">
                 <!-- kenwood Villa Section -->
-                <div class="villa-section active" id="kenwood-section">
+                <div class="villa-section" id="kenwood-section">
                     <div class="villa-gallery">
                         <div class="villa-slider kenwood-slider">
                             <div class="slider-container">
@@ -2262,11 +2254,16 @@
                 
                 /* Villa Sections */
                 .villa-section {
-                    display: none;
+                    display: block;
+                    margin-bottom: 60px;
+                    padding-bottom: 60px;
+                    border-bottom: 2px solid #e0e0e0;
                 }
                 
-                .villa-section.active {
-                    display: block;
+                .villa-section:last-child {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    border-bottom: none;
                 }
                 
                 /* Villa Info and Content */

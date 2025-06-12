@@ -359,29 +359,6 @@ document.addEventListener('DOMContentLoaded', function() {
         setInterval(nextSlide, slideInterval);
     }, 1000);
 
-    // Villa tab functionality
-    const villaTabs = document.querySelectorAll('.villa-tab');
-    const villaSections = document.querySelectorAll('.villa-section');
-    const pricingNotes = document.querySelector('.pricing-notes');
-
-    villaTabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            // Remove active class from all tabs and sections
-            villaTabs.forEach(t => t.classList.remove('active'));
-            villaSections.forEach(s => s.classList.remove('active'));
-            
-            // Add active class to clicked tab and corresponding section
-            tab.classList.add('active');
-            const villaId = tab.getAttribute('data-villa');
-            document.getElementById(`${villaId}-section`).classList.add('active');
-            
-            // Show pricing notes for all villas
-            if (pricingNotes) {
-                pricingNotes.style.display = 'block';
-            }
-        });
-    });
-    
     // Show coming soon message
     function showComingSoonMessage() {
         // Create a temporary notification
@@ -477,25 +454,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     updateSlider(newIndex);
                 });
             }
-            
-            // Thumbnail clicks
-            thumbnails.forEach((thumb, index) => {
-                thumb.addEventListener("click", () => {
-                    updateSlider(index);
-                });
-            });
         });
     }
 
-    // Initialize room sliders when rooms modal opens
-    const roomsCard = document.getElementById('rooms-card');
-    if (roomsCard) {
-        roomsCard.addEventListener('click', () => {
-            setTimeout(() => {
-                initializeRoomSliders();
-            }, 100);
-        });
-    }
+    // Initialize sliders when the DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+        initializeRoomSliders();
+    });
 
     // Gallery modal functionality
     const galleryTabs = document.querySelectorAll('.gallery-tab');
