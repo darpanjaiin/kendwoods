@@ -458,8 +458,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Initialize sliders when the DOM is loaded
+    initializeRoomSliders();
+
     document.addEventListener('DOMContentLoaded', () => {
-        initializeRoomSliders();
+        // ... existing code ...
+        // Add click handler for rooms modal to re-initialize sliders
+        const roomsCard = document.getElementById('rooms-card');
+        if (roomsCard) {
+            roomsCard.addEventListener('click', () => {
+                setTimeout(() => {
+                    initializeRoomSliders();
+                }, 100);
+            });
+        }
     });
 
     // Gallery modal functionality
